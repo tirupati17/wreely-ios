@@ -1,0 +1,41 @@
+{
+    "apps": [
+                  {
+                  "title": "RailEazy - Railway (Offline)",
+                  "description": "",
+                  "storeUrl": "https://itunes.apple.com/in/app/raileazy-railway-offline/id647693665?mt=8",
+                  "iconUrl": "https://www.celerstudio.com/assets/app_logos/ios/raileazy.png"
+                  },
+                  {
+                 "title": "SIP - Calculator",
+                 "description": "",
+                 "storeUrl": "https://itunes.apple.com/in/app/sip-calculator/id1092822415?mt=8",
+                 "iconUrl": "https://www.celerstudio.com/assets/app_logos/ios/sip-calculator.png"
+                  },
+                  {
+                "title": "EMI Calculator for Home Loan",
+                "description": "",
+                "storeUrl": "https://itunes.apple.com/in/app/emi-calculator-for-home-personal-car-loan/id1105890730?mt=8",
+                "iconUrl": "https://www.celerstudio.com/assets/app_logos/ios/emi-loan-calculator.png"
+                 },
+                 {
+                 "title": "Office In-Out",
+                 "description": "",
+                 "storeUrl": "https://itunes.apple.com/in/app/office-in-out/id545914108?mt=8",
+                 "iconUrl": "https://www.celerstudio.com/assets/app_logos/ios/office-inout.jpeg"
+                 },
+                 {
+                 "title": "Currency Converter",
+                 "description": "",
+                 "storeUrl": "https://itunes.apple.com/in/app/currency-converter-free-and-quick-converter/id1163490933?mt=8",
+                 "iconUrl": "https://www.celerstudio.com/assets/app_logos/ios/curreny-converter.png"
+                 },
+                 {
+                 "title": "Tip Calculator",
+                 "description": "",
+                 "storeUrl": "https://itunes.apple.com/in/app/tip-calculator-calculate-tip-and-split-the-bill/id1139456857?mt=8",
+                 "iconUrl": "https://www.celerstudio.com/assets/app_logos/ios/tip-calculator.png"
+                 }
+              ]
+}
+

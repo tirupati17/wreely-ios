@@ -1,0 +1,8 @@
+app_identifier("com.celerstudio.WreelySocial") # The bundle identifier of your app
+apple_id("tirupatibalan@gmail.com") # Your Apple email address
+
+itc_team_id("1429584") # iTunes Connect Team ID
+team_id("495XWEJ924") # Developer Portal Team ID
+
+# For more information about the Appfile, see:
+#     https://docs.fastlane.tools/advanced/#appfile

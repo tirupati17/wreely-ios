@@ -1,0 +1,11 @@
+framework module UserExperior {
+  umbrella header "UserExperior.h"
+
+  export *
+  module * { export * }
+}
+
+module UserExperior.Swift {
+    header "UserExperior-Swift.h"
+    requires objc
+}

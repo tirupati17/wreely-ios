@@ -1,0 +1,2651 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01830C8A1E84F138F9B0494C /* Pods_WreelySocial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6534304A383F333E131DFD49 /* Pods_WreelySocial.framework */; };
+		A4FD8F4395D99E075D79B118 /* Pods_WreelySocialTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DEEEFA5C8BF14B00FD4B418 /* Pods_WreelySocialTests.framework */; };
+		D50BF3A620037EB500BD8C87 /* WSFIRVendor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50BF3A520037EB500BD8C87 /* WSFIRVendor.swift */; };
+		D50BF3A82003826000BD8C87 /* WSFIRUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50BF3A72003826000BD8C87 /* WSFIRUser.swift */; };
+		D50BF3AA2003826E00BD8C87 /* WSFIRCompany.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50BF3A92003826E00BD8C87 /* WSFIRCompany.swift */; };
+		D50BF3AC2003AA4C00BD8C87 /* WSFirebaseRequest+Vendors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50BF3AB2003AA4C00BD8C87 /* WSFirebaseRequest+Vendors.swift */; };
+		D50BF3AF20040F8D00BD8C87 /* WSSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50BF3AE20040F8D00BD8C87 /* WSSession.swift */; };
+		D51AF84220CEFD03007C3A75 /* WSHTTPSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51AF84120CEFD03007C3A75 /* WSHTTPSessionManager.swift */; };
+		D51AF84420CEFFC7007C3A75 /* WSMemberWall.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51AF84320CEFFC7007C3A75 /* WSMemberWall.swift */; };
+		D51AF84E20CF09D7007C3A75 /* WSUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51AF84D20CF09D7007C3A75 /* WSUser.swift */; };
+		D51AF85020CF0AF9007C3A75 /* WSFirebaseSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51AF84F20CF0AF9007C3A75 /* WSFirebaseSession.swift */; };
+		D51DD5521FEA1B5F003A9C05 /* Routable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51DD5511FEA1B5F003A9C05 /* Routable.swift */; };
+		D51DD5541FEA3494003A9C05 /* WSLoginCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51DD5531FEA3494003A9C05 /* WSLoginCell.swift */; };
+		D51DD55F1FEA45A3003A9C05 /* TableViewCell+Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51DD55E1FEA45A3003A9C05 /* TableViewCell+Protocol.swift */; };
+		D51DD5611FEA45DA003A9C05 /* Storyboard+Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51DD5601FEA45DA003A9C05 /* Storyboard+Protocol.swift */; };
+		D51DD5631FEA46D5003A9C05 /* WSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51DD5621FEA46D5003A9C05 /* WSViewController.swift */; };
+		D51DD5671FEA4728003A9C05 /* WSTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51DD5661FEA4728003A9C05 /* WSTableViewController.swift */; };
+		D51DD56B1FEA484F003A9C05 /* WSTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51DD56A1FEA484F003A9C05 /* WSTableViewCell.swift */; };
+		D521ED661FEBC2AA00ED187D /* WSCompanyListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D521ED651FEBC2AA00ED187D /* WSCompanyListView.swift */; };
+		D521ED681FEBC2C700ED187D /* WSCompanyListProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D521ED671FEBC2C700ED187D /* WSCompanyListProtocol.swift */; };
+		D521ED6A1FEBC2DF00ED187D /* WSCompanyListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D521ED691FEBC2DF00ED187D /* WSCompanyListPresenter.swift */; };
+		D521ED6C1FEBC2FB00ED187D /* WSCompanyListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D521ED6B1FEBC2FB00ED187D /* WSCompanyListCell.swift */; };
+		D52FA017210B031300A61281 /* WSSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52FA016210B031300A61281 /* WSSettingViewController.swift */; };
+		D5309EB121C9297B009D0BF7 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5309EAF21C9297A009D0BF7 /* UIImage+Extension.swift */; };
+		D5309EB221C9297B009D0BF7 /* UIWindow+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5309EB021C9297B009D0BF7 /* UIWindow+Extension.swift */; };
+		D53F19EF20E0DC4000A7462E /* WSHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53F19EE20E0DC4000A7462E /* WSHomeViewController.swift */; };
+		D53F19F520E0EBAE00A7462E /* all_apps.json in Resources */ = {isa = PBXBuildFile; fileRef = D53F19F120E0EBAD00A7462E /* all_apps.json */; };
+		D53F19F620E0EBAE00A7462E /* TBCommonSettingProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53F19F220E0EBAD00A7462E /* TBCommonSettingProtocols.swift */; };
+		D53F19F720E0EBAE00A7462E /* TBCommonSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53F19F320E0EBAD00A7462E /* TBCommonSettingView.swift */; };
+		D53F19F820E0EBAE00A7462E /* TBCommonSettingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53F19F420E0EBAD00A7462E /* TBCommonSettingPresenter.swift */; };
+		D53F19FA20E1238900A7462E /* settings_white@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D53F19F920E1238900A7462E /* settings_white@3x.png */; };
+		D53F19FC20E124DA00A7462E /* WSMeetingRoomSlotsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53F19FB20E124DA00A7462E /* WSMeetingRoomSlotsView.swift */; };
+		D53F19FE20E124EF00A7462E /* WSMeetingRoomSlotsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53F19FD20E124EF00A7462E /* WSMeetingRoomSlotsProtocol.swift */; };
+		D53F1A0020E1250100A7462E /* WSMeetingRoomSlotsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53F19FF20E1250100A7462E /* WSMeetingRoomSlotsPresenter.swift */; };
+		D53F1A0220E1251000A7462E /* WSMeetingRoomSlotsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53F1A0120E1251000A7462E /* WSMeetingRoomSlotsCell.swift */; };
+		D53F1A0420E1252700A7462E /* WSMeetingRoomSlotsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D53F1A0320E1252700A7462E /* WSMeetingRoomSlotsCell.xib */; };
+		D53F1A0820E1270A00A7462E /* icn_checkbox_selected_disabled@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D53F1A0520E1270900A7462E /* icn_checkbox_selected_disabled@3x.png */; };
+		D53F1A0920E1270A00A7462E /* icn_checkbox_unselected_enabled@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D53F1A0620E1270900A7462E /* icn_checkbox_unselected_enabled@3x.png */; };
+		D53F1A0A20E1270B00A7462E /* icn_checkbox_selected_enabled@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D53F1A0720E1270A00A7462E /* icn_checkbox_selected_enabled@3x.png */; };
+		D53F1A0C20E12A9500A7462E /* WSMeetingRoomSlot.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53F1A0B20E12A9500A7462E /* WSMeetingRoomSlot.swift */; };
+		D53F1A0E20E1838E00A7462E /* icn_logo_small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D53F1A0D20E1838D00A7462E /* icn_logo_small@2x.png */; };
+		D53F1A1020E21BCB00A7462E /* WSMeetingRoomHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53F1A0F20E21BCA00A7462E /* WSMeetingRoomHistoryView.swift */; };
+		D53F1A1220E21BE300A7462E /* WSMeetingRoomHistoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53F1A1120E21BE300A7462E /* WSMeetingRoomHistoryProtocol.swift */; };
+		D53F1A1420E21BF400A7462E /* WSMeetingRoomHistoryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53F1A1320E21BF400A7462E /* WSMeetingRoomHistoryPresenter.swift */; };
+		D53F1A1620E21C0400A7462E /* WSMeetingRoomHistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53F1A1520E21C0400A7462E /* WSMeetingRoomHistoryCell.swift */; };
+		D53F1A1820E21C2000A7462E /* WSMeetingRoomHistoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D53F1A1720E21C2000A7462E /* WSMeetingRoomHistoryCell.xib */; };
+		D53F1A1A20E2289600A7462E /* WSMeetingRoomHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53F1A1920E2289600A7462E /* WSMeetingRoomHistory.swift */; };
+		D54849EC1FEAA41A004AA46C /* WSForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54849EB1FEAA419004AA46C /* WSForgotPasswordView.swift */; };
+		D54849EE1FEAA430004AA46C /* WSForgotPasswordPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54849ED1FEAA430004AA46C /* WSForgotPasswordPresenter.swift */; };
+		D54849F01FEAA441004AA46C /* WSForgotPasswordProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54849EF1FEAA441004AA46C /* WSForgotPasswordProtocol.swift */; };
+		D54849F21FEAA450004AA46C /* WSForgotPasswordCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54849F11FEAA450004AA46C /* WSForgotPasswordCell.swift */; };
+		D54ADDF9210212F100000E11 /* WSEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54ADDF8210212F000000E11 /* WSEvent.swift */; };
+		D54C3FEB20BC08A9003827BD /* WSMeetingRoomListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54C3FEA20BC08A9003827BD /* WSMeetingRoomListView.swift */; };
+		D54C3FED20BC08C5003827BD /* WSMeetingRoomListProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54C3FEC20BC08C5003827BD /* WSMeetingRoomListProtocol.swift */; };
+		D54C3FEF20BC1FA6003827BD /* WSMeetingRoomListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54C3FEE20BC1FA6003827BD /* WSMeetingRoomListPresenter.swift */; };
+		D54C3FF120BC20F3003827BD /* WSTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54C3FF020BC20F3003827BD /* WSTracking.swift */; };
+		D54C400B20BC216E003827BD /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54C3FF320BC216E003827BD /* Bundle+Extension.swift */; };
+		D54C400C20BC216E003827BD /* Data+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54C3FF420BC216E003827BD /* Data+Extension.swift */; };
+		D54C400D20BC216E003827BD /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54C3FF520BC216E003827BD /* Date+Extension.swift */; };
+		D54C400E20BC216E003827BD /* Int+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54C3FF620BC216E003827BD /* Int+Extension.swift */; };
+		D54C400F20BC216E003827BD /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54C3FF720BC216E003827BD /* String+Extension.swift */; };
+		D54C401020BC216E003827BD /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54C3FF820BC216E003827BD /* UIColor+Extension.swift */; };
+		D54C401120BC216E003827BD /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54C3FF920BC216E003827BD /* UIFont+Extension.swift */; };
+		D54C401220BC216E003827BD /* UInt+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54C3FFA20BC216E003827BD /* UInt+Extension.swift */; };
+		D54C401320BC216E003827BD /* UserDefault+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54C3FFB20BC216E003827BD /* UserDefault+Extension.swift */; };
+		D54C401420BC216E003827BD /* UIAlertController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54C3FFD20BC216E003827BD /* UIAlertController+Extension.swift */; };
+		D54C401520BC216E003827BD /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54C3FFE20BC216E003827BD /* UIButton+Extension.swift */; };
+		D54C401620BC216E003827BD /* UIDevice+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54C3FFF20BC216E003827BD /* UIDevice+Extension.swift */; };
+		D54C401720BC216E003827BD /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54C400020BC216E003827BD /* UIImageView+Extension.swift */; };
+		D54C401820BC216E003827BD /* UINavigationController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54C400120BC216E003827BD /* UINavigationController+Extension.swift */; };
+		D54C401920BC216E003827BD /* UIStoryboard+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54C400220BC216E003827BD /* UIStoryboard+Extension.swift */; };
+		D54C401A20BC216E003827BD /* UITableViewCell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54C400320BC216E003827BD /* UITableViewCell+Extension.swift */; };
+		D54C401B20BC216E003827BD /* UITableViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54C400420BC216E003827BD /* UITableViewController+Extension.swift */; };
+		D54C401C20BC216E003827BD /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54C400520BC216E003827BD /* UIView+Extension.swift */; };
+		D54C401D20BC216E003827BD /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54C400620BC216E003827BD /* UIViewController+Extension.swift */; };
+		D54C401E20BC216E003827BD /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54C400820BC216E003827BD /* Array+Extension.swift */; };
+		D54C401F20BC216E003827BD /* Dictionary+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54C400920BC216E003827BD /* Dictionary+Extension.swift */; };
+		D54C402020BC216E003827BD /* Error+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54C400A20BC216E003827BD /* Error+Extension.swift */; };
+		D54C402420BC875D003827BD /* WSError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54C402120BC875C003827BD /* WSError.swift */; };
+		D54C402520BC875D003827BD /* WSLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54C402220BC875C003827BD /* WSLogger.swift */; };
+		D54C402620BC875D003827BD /* WSTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54C402320BC875D003827BD /* WSTheme.swift */; };
+		D54C402820BC877B003827BD /* WSFunctional.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54C402720BC877B003827BD /* WSFunctional.swift */; };
+		D54C402C20BC88CC003827BD /* WSMember.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54C402B20BC88CC003827BD /* WSMember.swift */; };
+		D54C402E20BC890C003827BD /* WSCompany.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54C402D20BC890C003827BD /* WSCompany.swift */; };
+		D54C403020BC8953003827BD /* WSMeetingRoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54C402F20BC8953003827BD /* WSMeetingRoom.swift */; };
+		D54C403220BC8992003827BD /* WSMeetingRoomBookings.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54C403120BC8992003827BD /* WSMeetingRoomBookings.swift */; };
+		D551732E20C5515A005C0026 /* WSMemberWallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D551732D20C5515A005C0026 /* WSMemberWallView.swift */; };
+		D551733020C5516F005C0026 /* WSMemberWallProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D551732F20C5516E005C0026 /* WSMemberWallProtocol.swift */; };
+		D551733220C5517E005C0026 /* WSMemberWallPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D551733120C5517E005C0026 /* WSMemberWallPresenter.swift */; };
+		D551733420C57467005C0026 /* WSMemberWallCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D551733320C57467005C0026 /* WSMemberWallCell.xib */; };
+		D551733620C577EF005C0026 /* WSMemberWallCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D551733520C577EF005C0026 /* WSMemberWallCell.swift */; };
+		D551733820C57F14005C0026 /* icn_more@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D551733720C57F12005C0026 /* icn_more@2x.png */; };
+		D551733A20C5851B005C0026 /* WSMeetingRoomListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D551733920C5851B005C0026 /* WSMeetingRoomListCell.swift */; };
+		D551733C20C5852A005C0026 /* WSMeetingRoomListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D551733B20C5852A005C0026 /* WSMeetingRoomListCell.xib */; };
+		D551734020C5B782005C0026 /* all_posts.json in Resources */ = {isa = PBXBuildFile; fileRef = D551733E20C5B782005C0026 /* all_posts.json */; };
+		D551734120C5B782005C0026 /* single_post.json in Resources */ = {isa = PBXBuildFile; fileRef = D551733F20C5B782005C0026 /* single_post.json */; };
+		D557785420DFE3DA00D10CDA /* WSAPIRequest+MeetingRooms.swift in Sources */ = {isa = PBXBuildFile; fileRef = D557785320DFE3DA00D10CDA /* WSAPIRequest+MeetingRooms.swift */; };
+		D557785620DFE46600D10CDA /* WSAPIRequest+MemberWalls.swift in Sources */ = {isa = PBXBuildFile; fileRef = D557785520DFE46600D10CDA /* WSAPIRequest+MemberWalls.swift */; };
+		D559402F1FF69D310004D124 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D559402E1FF69D310004D124 /* GoogleService-Info.plist */; };
+		D564621320FCF282000E7A9E /* WSVendor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D564621220FCF282000E7A9E /* WSVendor.swift */; };
+		D569844A21255EF70068FD85 /* WSTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D569844921255EF70068FD85 /* WSTabBarController.swift */; };
+		D569844C21255F130068FD85 /* WSTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D569844B21255F130068FD85 /* WSTabBar.swift */; };
+		D56C71C1214A935800F1AEC5 /* WSMemberWallCommentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56C71C0214A935800F1AEC5 /* WSMemberWallCommentView.swift */; };
+		D56C71C3214A936B00F1AEC5 /* WSMemberWallCommentProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56C71C2214A936B00F1AEC5 /* WSMemberWallCommentProtocol.swift */; };
+		D56C71C5214A938200F1AEC5 /* WSMemberWallCommentPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56C71C4214A938200F1AEC5 /* WSMemberWallCommentPresenter.swift */; };
+		D56C71C7214A939300F1AEC5 /* WSMemberWallCommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56C71C6214A939300F1AEC5 /* WSMemberWallCommentCell.swift */; };
+		D5774091216A1C0A002727D0 /* WSMeetingRoomDashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5774090216A1C0A002727D0 /* WSMeetingRoomDashboard.swift */; };
+		D57CD8F81FFE5A3D004452A0 /* WSNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57CD8F71FFE5A3D004452A0 /* WSNavigationController.swift */; };
+		D57CD8FA1FFE5AC6004452A0 /* WSImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57CD8F91FFE5AC6004452A0 /* WSImageView.swift */; };
+		D57CD8FC1FFE6063004452A0 /* WSFirebaseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57CD8FB1FFE6063004452A0 /* WSFirebaseRequest.swift */; };
+		D57CD8FE1FFE6192004452A0 /* WSFirebaseRequest+Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57CD8FD1FFE6192004452A0 /* WSFirebaseRequest+Users.swift */; };
+		D5815FED2147D26F007F3C6C /* WSProfileWallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5815FEC2147D26E007F3C6C /* WSProfileWallView.swift */; };
+		D58246D3214B952D00909B71 /* WSMemberWallLikeCommentPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58246D2214B952D00909B71 /* WSMemberWallLikeCommentPageController.swift */; };
+		D582E2802004F7D900F6FA5C /* WSRequest+Companies.swift in Sources */ = {isa = PBXBuildFile; fileRef = D582E27F2004F7D800F6FA5C /* WSRequest+Companies.swift */; };
+		D582E2822004F82500F6FA5C /* WSFirebaseRequest+Companies.swift in Sources */ = {isa = PBXBuildFile; fileRef = D582E2812004F82500F6FA5C /* WSFirebaseRequest+Companies.swift */; };
+		D582E285200611FB00F6FA5C /* WSRequest+Vendors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D582E284200611FB00F6FA5C /* WSRequest+Vendors.swift */; };
+		D582E2872006122A00F6FA5C /* WSRequest+Members.swift in Sources */ = {isa = PBXBuildFile; fileRef = D582E2862006122A00F6FA5C /* WSRequest+Members.swift */; };
+		D582E2892006125D00F6FA5C /* WSFirebaseRequest+Members.swift in Sources */ = {isa = PBXBuildFile; fileRef = D582E2882006125D00F6FA5C /* WSFirebaseRequest+Members.swift */; };
+		D582E28C2006130900F6FA5C /* WSMemberListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D582E28B2006130900F6FA5C /* WSMemberListView.swift */; };
+		D582E28E2006131900F6FA5C /* WSMemberListProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D582E28D2006131900F6FA5C /* WSMemberListProtocol.swift */; };
+		D582E2902006132700F6FA5C /* WSMemberListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D582E28F2006132700F6FA5C /* WSMemberListPresenter.swift */; };
+		D582E2922006133400F6FA5C /* WSMemberListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D582E2912006133400F6FA5C /* WSMemberListCell.swift */; };
+		D582E2942006134200F6FA5C /* WSMemberListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D582E2932006134200F6FA5C /* WSMemberListCell.xib */; };
+		D58357F7200A3541009ABCAD /* WSEventListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58357F6200A3541009ABCAD /* WSEventListView.swift */; };
+		D58357F9200A357A009ABCAD /* WSEventListProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58357F8200A357A009ABCAD /* WSEventListProtocol.swift */; };
+		D58357FB200A3590009ABCAD /* WSEventListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58357FA200A3590009ABCAD /* WSEventListPresenter.swift */; };
+		D58357FD200A359F009ABCAD /* WSEventListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58357FC200A359F009ABCAD /* WSEventListCell.swift */; };
+		D58357FF200A35B5009ABCAD /* WSEventListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D58357FE200A35B5009ABCAD /* WSEventListCell.xib */; };
+		D5835801200A3B95009ABCAD /* WSFIREvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5835800200A3B95009ABCAD /* WSFIREvent.swift */; };
+		D5835804200CA554009ABCAD /* WSCompanyDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5835803200CA554009ABCAD /* WSCompanyDetailView.swift */; };
+		D5835806200CA568009ABCAD /* WSCompanyDetailProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5835805200CA568009ABCAD /* WSCompanyDetailProtocol.swift */; };
+		D5835808200CA576009ABCAD /* WSCompanyDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5835807200CA576009ABCAD /* WSCompanyDetailPresenter.swift */; };
+		D583580A200CA582009ABCAD /* WSCompanyDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5835809200CA582009ABCAD /* WSCompanyDetailCell.swift */; };
+		D583580C200CA59A009ABCAD /* WSCompanyDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D583580B200CA59A009ABCAD /* WSCompanyDetailCell.xib */; };
+		D583580F200CAA61009ABCAD /* WSMemberDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D583580E200CAA61009ABCAD /* WSMemberDetailView.swift */; };
+		D5835811200CAA70009ABCAD /* WSMemberDetailProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5835810200CAA70009ABCAD /* WSMemberDetailProtocol.swift */; };
+		D5835813200CAA84009ABCAD /* WSMemberDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5835812200CAA84009ABCAD /* WSMemberDetailPresenter.swift */; };
+		D5835815200CAA90009ABCAD /* WSMemberDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5835814200CAA90009ABCAD /* WSMemberDetailCell.swift */; };
+		D5835817200CAA9E009ABCAD /* WSMemberDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5835816200CAA9E009ABCAD /* WSMemberDetailCell.xib */; };
+		D583581A200CACEC009ABCAD /* WSEventDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5835819200CACEC009ABCAD /* WSEventDetailView.swift */; };
+		D583581C200CACFA009ABCAD /* WSEventDetailProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D583581B200CACFA009ABCAD /* WSEventDetailProtocol.swift */; };
+		D583581E200CAD06009ABCAD /* WSEventDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D583581D200CAD06009ABCAD /* WSEventDetailPresenter.swift */; };
+		D5835820200CAD13009ABCAD /* WSEventDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D583581F200CAD13009ABCAD /* WSEventDetailCell.swift */; };
+		D5835822200CAD20009ABCAD /* WSEventDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5835821200CAD20009ABCAD /* WSEventDetailCell.xib */; };
+		D58B8A1020F38A13008114E9 /* WSOTPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58B8A0F20F38A13008114E9 /* WSOTPView.swift */; };
+		D58B8A1220F38A25008114E9 /* WSOTPPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58B8A1120F38A25008114E9 /* WSOTPPresenter.swift */; };
+		D58B8A1420F38A36008114E9 /* WSOTPProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58B8A1320F38A36008114E9 /* WSOTPProtocol.swift */; };
+		D58B8A1620F38A46008114E9 /* WSOTPCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58B8A1520F38A45008114E9 /* WSOTPCell.swift */; };
+		D58B8A1820F38A5D008114E9 /* WSOTPConfirmationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58B8A1720F38A5D008114E9 /* WSOTPConfirmationView.swift */; };
+		D58B8A1A20F38A72008114E9 /* WSOTPConfirmationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58B8A1920F38A72008114E9 /* WSOTPConfirmationPresenter.swift */; };
+		D58B8A1C20F38A8B008114E9 /* WSOTPConfirmationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58B8A1B20F38A8B008114E9 /* WSOTPConfirmationProtocol.swift */; };
+		D58B8A1E20F38A9A008114E9 /* WSOTPConfirmationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58B8A1D20F38A9A008114E9 /* WSOTPConfirmationCell.swift */; };
+		D58D45CD21491B49009FD825 /* WSProfileWallProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58D45CC21491B48009FD825 /* WSProfileWallProtocol.swift */; };
+		D58D45CF21491B6D009FD825 /* WSProfileWallPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58D45CE21491B6C009FD825 /* WSProfileWallPresenter.swift */; };
+		D58D45D121491BA4009FD825 /* WSProfileWallCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58D45D021491BA3009FD825 /* WSProfileWallCell.swift */; };
+		D599DA4F214EF400006CC0FD /* WSGroupListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D599DA4E214EF400006CC0FD /* WSGroupListView.swift */; };
+		D599DA51214EF427006CC0FD /* WSGroupListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D599DA50214EF427006CC0FD /* WSGroupListCell.swift */; };
+		D599DA53214EF875006CC0FD /* WSGroupListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D599DA52214EF875006CC0FD /* WSGroupListPresenter.swift */; };
+		D599DA55214EF888006CC0FD /* WSGroupListProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D599DA54214EF888006CC0FD /* WSGroupListProtocol.swift */; };
+		D59C6A6B2142613A00790AED /* WSMemberWallPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59C6A6A2142613A00790AED /* WSMemberWallPostView.swift */; };
+		D59C6A6D2142614E00790AED /* WSMemberWallPostProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59C6A6C2142614E00790AED /* WSMemberWallPostProtocol.swift */; };
+		D59C6A6F2142615E00790AED /* WSMemberWallPostPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59C6A6E2142615E00790AED /* WSMemberWallPostPresenter.swift */; };
+		D59C6A712142619500790AED /* WSMemberWallPostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59C6A702142619500790AED /* WSMemberWallPostCell.swift */; };
+		D59C932021467F5200B62BA5 /* WSMemberWallLikeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59C931F21467F5200B62BA5 /* WSMemberWallLikeView.swift */; };
+		D59C932221467F9300B62BA5 /* WSMemberWallLikeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59C932121467F9300B62BA5 /* WSMemberWallLikeProtocol.swift */; };
+		D59C932421467FA300B62BA5 /* WSMemberWallLikePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59C932321467FA300B62BA5 /* WSMemberWallLikePresenter.swift */; };
+		D59C932621467FB400B62BA5 /* WSMemberWallLikeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59C932521467FB400B62BA5 /* WSMemberWallLikeCell.swift */; };
+		D59F353A212FE43A00CC6B58 /* WSMemberCompanyPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59F3539212FE43A00CC6B58 /* WSMemberCompanyPageController.swift */; };
+		D5A6039C212DF6B9004224F5 /* dark.json in Resources */ = {isa = PBXBuildFile; fileRef = D5A6039B212DF6B9004224F5 /* dark.json */; };
+		D5A6039E212E02C9004224F5 /* silver.json in Resources */ = {isa = PBXBuildFile; fileRef = D5A6039D212E02C9004224F5 /* silver.json */; };
+		D5AEBF471FF6E03F0098C841 /* WSFirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5AEBF461FF6E03F0098C841 /* WSFirebaseManager.swift */; };
+		D5AEBF491FF6E3E70098C841 /* WSDBRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5AEBF481FF6E3E70098C841 /* WSDBRequest.swift */; };
+		D5AEBF4B1FF6E4450098C841 /* WSDatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5AEBF4A1FF6E4450098C841 /* WSDatabaseManager.swift */; };
+		D5AEBF4F1FF6E4AB0098C841 /* WSDBRequest+Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5AEBF4E1FF6E4AB0098C841 /* WSDBRequest+Users.swift */; };
+		D5B967052122EF80006C2C09 /* WSWorkspace.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B967042122EF80006C2C09 /* WSWorkspace.swift */; };
+		D5B9671E2122FCEF006C2C09 /* UIView+Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B9671D2122FCEF006C2C09 /* UIView+Protocol.swift */; };
+		D5B967202122FDF6006C2C09 /* UIViewController+Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B9671F2122FDF6006C2C09 /* UIViewController+Protocol.swift */; };
+		D5B96722212309E5006C2C09 /* WSRequest+Workspaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B96721212309E5006C2C09 /* WSRequest+Workspaces.swift */; };
+		D5B96724212309FD006C2C09 /* WSAPIRequest+Workspaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B96723212309FD006C2C09 /* WSAPIRequest+Workspaces.swift */; };
+		D5C420C11FED10FA00483BA4 /* 3-logo-large.png in Resources */ = {isa = PBXBuildFile; fileRef = D5C420B61FED10F900483BA4 /* 3-logo-large.png */; };
+		D5C420C21FED10FA00483BA4 /* 3-logo-medium.png in Resources */ = {isa = PBXBuildFile; fileRef = D5C420B71FED10F900483BA4 /* 3-logo-medium.png */; };
+		D5C420C31FED10FA00483BA4 /* 3-logo-mini.png in Resources */ = {isa = PBXBuildFile; fileRef = D5C420B81FED10F900483BA4 /* 3-logo-mini.png */; };
+		D5C420C41FED10FA00483BA4 /* 7-logo-large.png in Resources */ = {isa = PBXBuildFile; fileRef = D5C420BA1FED10F900483BA4 /* 7-logo-large.png */; };
+		D5C420C51FED10FA00483BA4 /* 7-logo-medium.png in Resources */ = {isa = PBXBuildFile; fileRef = D5C420BB1FED10F900483BA4 /* 7-logo-medium.png */; };
+		D5C420C61FED10FA00483BA4 /* 7-logo-mini.png in Resources */ = {isa = PBXBuildFile; fileRef = D5C420BC1FED10F900483BA4 /* 7-logo-mini.png */; };
+		D5C420C71FED10FA00483BA4 /* 8-logo-large.png in Resources */ = {isa = PBXBuildFile; fileRef = D5C420BE1FED10F900483BA4 /* 8-logo-large.png */; };
+		D5C420C81FED10FA00483BA4 /* 8-logo-medium.png in Resources */ = {isa = PBXBuildFile; fileRef = D5C420BF1FED10F900483BA4 /* 8-logo-medium.png */; };
+		D5C420C91FED10FA00483BA4 /* 8-logo-mini.png in Resources */ = {isa = PBXBuildFile; fileRef = D5C420C01FED10F900483BA4 /* 8-logo-mini.png */; };
+		D5C420CB1FED375100483BA4 /* WSCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C420CA1FED375100483BA4 /* WSCollectionViewController.swift */; };
+		D5CC1B04210314F5004E8BCE /* WSRequest+Events.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CC1B03210314F5004E8BCE /* WSRequest+Events.swift */; };
+		D5CC1B062103152E004E8BCE /* WSAPIRequest+Events.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CC1B052103152E004E8BCE /* WSAPIRequest+Events.swift */; };
+		D5CC1B0821032190004E8BCE /* WSButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CC1B0721032190004E8BCE /* WSButton.swift */; };
+		D5CC1B0A21034618004E8BCE /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CC1B0921034618004E8BCE /* UITableView+Extension.swift */; };
+		D5CE646E214BF86600D6A58B /* WSMemberGroupChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CE646D214BF86600D6A58B /* WSMemberGroupChatView.swift */; };
+		D5D241D81FF3D89F00E9DF3C /* WSCompanyListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5D241D71FF3D89F00E9DF3C /* WSCompanyListCell.xib */; };
+		D5D241DA1FF3D9AA00E9DF3C /* WSCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D241D91FF3D9AA00E9DF3C /* WSCollectionViewCell.swift */; };
+		D5D241DD1FF40C1000E9DF3C /* WSSideMenuRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D241DC1FF40C0F00E9DF3C /* WSSideMenuRootViewController.swift */; };
+		D5D241E01FF4CCFA00E9DF3C /* WSMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D241DF1FF4CCFA00E9DF3C /* WSMainViewController.swift */; };
+		D5D241E21FF5119A00E9DF3C /* WSSideMenuNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D241E11FF5119A00E9DF3C /* WSSideMenuNavigationController.swift */; };
+		D5DEB76C20C4889F0088A9B6 /* icn_rectangle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D5DEB76B20C4889D0088A9B6 /* icn_rectangle@2x.png */; };
+		D5DEB76E20C48B980088A9B6 /* icn_left_arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D5DEB76D20C48B970088A9B6 /* icn_left_arrow@2x.png */; };
+		D5DEB77820C48C840088A9B6 /* FSMe-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = D5DEB77020C48C7F0088A9B6 /* FSMe-Bold.otf */; };
+		D5DEB77920C48C840088A9B6 /* FSMe-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = D5DEB77120C48C7F0088A9B6 /* FSMe-BoldItalic.otf */; };
+		D5DEB77A20C48C840088A9B6 /* FSMe-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = D5DEB77220C48C7F0088A9B6 /* FSMe-Heavy.otf */; };
+		D5DEB77B20C48C840088A9B6 /* FSMe-HeavyItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = D5DEB77320C48C7F0088A9B6 /* FSMe-HeavyItalic.otf */; };
+		D5DEB77C20C48C840088A9B6 /* FSMe-Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = D5DEB77420C48C7F0088A9B6 /* FSMe-Italic.otf */; };
+		D5DEB77D20C48C840088A9B6 /* FSMe-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = D5DEB77520C48C7F0088A9B6 /* FSMe-Light.otf */; };
+		D5DEB77E20C48C840088A9B6 /* FSMe-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = D5DEB77620C48C7F0088A9B6 /* FSMe-LightItalic.otf */; };
+		D5DEB77F20C48C840088A9B6 /* FSMe-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = D5DEB77720C48C7F0088A9B6 /* FSMe-Regular.otf */; };
+		D5E8EF5D20E0193100409F70 /* WSAPIRequest+Companies.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E8EF5C20E0193100409F70 /* WSAPIRequest+Companies.swift */; };
+		D5E8EF5F20E0194000409F70 /* WSAPIRequest+Members.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E8EF5E20E0193F00409F70 /* WSAPIRequest+Members.swift */; };
+		D5E8EF6120E0196700409F70 /* WSRequest+MeetingRoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E8EF6020E0196700409F70 /* WSRequest+MeetingRoom.swift */; };
+		D5E8EF6620E029D800409F70 /* MessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E8EF6320E029D800409F70 /* MessageTableViewCell.swift */; };
+		D5E8EF6720E029D800409F70 /* TBChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E8EF6420E029D800409F70 /* TBChatViewController.swift */; };
+		D5E8EF6820E029D800409F70 /* MessageBubbleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E8EF6520E029D800409F70 /* MessageBubbleView.swift */; };
+		D5E8EF6A20E02B2700409F70 /* WSFIRMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E8EF6920E02B2700409F70 /* WSFIRMessages.swift */; };
+		D5E8EF6F20E0B0AE00409F70 /* WSBasicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E8EF6E20E0B0AE00409F70 /* WSBasicViewController.swift */; };
+		D5EACDA01FFD80AD00F821E6 /* WSWorkspaceSelectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5EACD9F1FFD80AD00F821E6 /* WSWorkspaceSelectionCell.xib */; };
+		D5EACDA31FFD855100F821E6 /* wreely_logo_circle_large@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D5EACDA11FFD854E00F821E6 /* wreely_logo_circle_large@2x.png */; };
+		D5EACDA41FFD855100F821E6 /* wreely_logo_circle_medium@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D5EACDA21FFD855000F821E6 /* wreely_logo_circle_medium@2x.png */; };
+		D5EBE156213D35AA0058B337 /* WSMemberWallLikes.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5EBE155213D35AA0058B337 /* WSMemberWallLikes.swift */; };
+		D5EBE158213D35CB0058B337 /* WSMemberWallComments.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5EBE157213D35CB0058B337 /* WSMemberWallComments.swift */; };
+		D5EBE15A213D39130058B337 /* WSRequest+MemberWalls.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5EBE159213D39130058B337 /* WSRequest+MemberWalls.swift */; };
+		D5EDF6B01FF7051200CDF37C /* wreely-819a2-firebase-crashreporting-98g70-52356fa525.json in Resources */ = {isa = PBXBuildFile; fileRef = D5EDF6AF1FF7051200CDF37C /* wreely-819a2-firebase-crashreporting-98g70-52356fa525.json */; };
+		D5EDF6B31FF7CEA000CDF37C /* WSWorkspaceSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5EDF6B21FF7CEA000CDF37C /* WSWorkspaceSelectionView.swift */; };
+		D5EDF6B51FF7CEB300CDF37C /* WSWorkspaceSelectionPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5EDF6B41FF7CEB300CDF37C /* WSWorkspaceSelectionPresenter.swift */; };
+		D5EDF6B71FF7CEC600CDF37C /* WSWorkspaceSelectionProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5EDF6B61FF7CEC600CDF37C /* WSWorkspaceSelectionProtocols.swift */; };
+		D5EDF6B91FF7CF6B00CDF37C /* WSWorkspaceSelectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5EDF6B81FF7CF6B00CDF37C /* WSWorkspaceSelectionCell.swift */; };
+		D5F24FCE1FE8F97100FA4040 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5F24FCC1FE8F97100FA4040 /* Main.storyboard */; };
+		D5F24FD01FE8F97100FA4040 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5F24FCF1FE8F97100FA4040 /* Assets.xcassets */; };
+		D5F24FD31FE8F97100FA4040 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5F24FD11FE8F97100FA4040 /* LaunchScreen.storyboard */; };
+		D5F24FDE1FE8F97100FA4040 /* WreelySocialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F24FDD1FE8F97100FA4040 /* WreelySocialTests.swift */; };
+		D5F24FE91FE8F97100FA4040 /* WreelySocialUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F24FE81FE8F97100FA4040 /* WreelySocialUITests.swift */; };
+		D5F250461FE9151300FA4040 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F250291FE9151300FA4040 /* AppDelegate.swift */; };
+		D5F250471FE9151300FA4040 /* WSAPIRequest+Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F2502F1FE9151300FA4040 /* WSAPIRequest+Users.swift */; };
+		D5F250481FE9151300FA4040 /* WSAPIConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F250311FE9151300FA4040 /* WSAPIConstant.swift */; };
+		D5F250491FE9151300FA4040 /* WSAPIRequestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F250321FE9151300FA4040 /* WSAPIRequestType.swift */; };
+		D5F2504A1FE9151300FA4040 /* WSAPIStringUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F250331FE9151300FA4040 /* WSAPIStringUrl.swift */; };
+		D5F2504B1FE9151300FA4040 /* WSAPIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F250341FE9151300FA4040 /* WSAPIRequest.swift */; };
+		D5F2504C1FE9151300FA4040 /* WSConnectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F250351FE9151300FA4040 /* WSConnectionManager.swift */; };
+		D5F2504D1FE9151300FA4040 /* WSRequest+User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F250381FE9151300FA4040 /* WSRequest+User.swift */; };
+		D5F2504E1FE9151300FA4040 /* WSRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F250391FE9151300FA4040 /* WSRequest.swift */; };
+		D5F2504F1FE9151300FA4040 /* WSConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F2503F1FE9151300FA4040 /* WSConstant.swift */; };
+		D5F250511FE9151300FA4040 /* WSSplashPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F250441FE9151300FA4040 /* WSSplashPresenter.swift */; };
+		D5F250521FE9151300FA4040 /* WSSplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F250451FE9151300FA4040 /* WSSplashView.swift */; };
+		D5F250571FE915E800FA4040 /* ic_wreely_splash@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D5F250561FE915E800FA4040 /* ic_wreely_splash@2x.png */; };
+		D5F250591FE91B6000FA4040 /* WSSplashProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F250581FE91B6000FA4040 /* WSSplashProtocols.swift */; };
+		D5F2505D1FE927DE00FA4040 /* WSLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F2505C1FE927DE00FA4040 /* WSLoginView.swift */; };
+		D5F2505F1FE927F100FA4040 /* WSLoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F2505E1FE927F100FA4040 /* WSLoginPresenter.swift */; };
+		D5F250611FE9280300FA4040 /* WSLoginProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F250601FE9280300FA4040 /* WSLoginProtocol.swift */; };
+		D5F70B462107458E009E9780 /* SWTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F70B442107458D009E9780 /* SWTabBar.swift */; };
+		D5F70B472107458E009E9780 /* SWTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F70B452107458E009E9780 /* SWTabBarController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D5F24FDA1FE8F97100FA4040 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D5F24FBD1FE8F97000FA4040 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D5F24FC41FE8F97100FA4040;
+			remoteInfo = WreelySocial;
+		};
+		D5F24FE51FE8F97100FA4040 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D5F24FBD1FE8F97000FA4040 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D5F24FC41FE8F97100FA4040;
+			remoteInfo = WreelySocial;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D5CCC33A223A7DC700E7940E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0DEEEFA5C8BF14B00FD4B418 /* Pods_WreelySocialTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WreelySocialTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		35763C9928CDFE75B0649680 /* Pods-WreelySocialTests.debug beta.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WreelySocialTests.debug beta.xcconfig"; path = "Pods/Target Support Files/Pods-WreelySocialTests/Pods-WreelySocialTests.debug beta.xcconfig"; sourceTree = "<group>"; };
+		38F3BBD53CA4F360C8215148 /* Pods-WreelySocial.debug beta.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WreelySocial.debug beta.xcconfig"; path = "Pods/Target Support Files/Pods-WreelySocial/Pods-WreelySocial.debug beta.xcconfig"; sourceTree = "<group>"; };
+		4EEAD396537CF0447301172F /* Pods-WreelySocial.release beta.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WreelySocial.release beta.xcconfig"; path = "Pods/Target Support Files/Pods-WreelySocial/Pods-WreelySocial.release beta.xcconfig"; sourceTree = "<group>"; };
+		59932F1A5A213BD2F9BF3F20 /* Pods-WreelySocial.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WreelySocial.release.xcconfig"; path = "Pods/Target Support Files/Pods-WreelySocial/Pods-WreelySocial.release.xcconfig"; sourceTree = "<group>"; };
+		632CD12B2200979CCBCBE41A /* Pods-WreelySocialTests.release beta.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WreelySocialTests.release beta.xcconfig"; path = "Pods/Target Support Files/Pods-WreelySocialTests/Pods-WreelySocialTests.release beta.xcconfig"; sourceTree = "<group>"; };
+		6534304A383F333E131DFD49 /* Pods_WreelySocial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WreelySocial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		69CDC9D6326CFC67E2BB9FCC /* Pods-WreelySocialTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WreelySocialTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WreelySocialTests/Pods-WreelySocialTests.release.xcconfig"; sourceTree = "<group>"; };
+		82B53ACEB957C0E787C22B84 /* Pods-WreelySocial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WreelySocial.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WreelySocial/Pods-WreelySocial.debug.xcconfig"; sourceTree = "<group>"; };
+		D476B183626E96AD773F05BE /* Pods-WreelySocialTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WreelySocialTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WreelySocialTests/Pods-WreelySocialTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D50BF3A520037EB500BD8C87 /* WSFIRVendor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSFIRVendor.swift; sourceTree = "<group>"; };
+		D50BF3A72003826000BD8C87 /* WSFIRUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSFIRUser.swift; sourceTree = "<group>"; };
+		D50BF3A92003826E00BD8C87 /* WSFIRCompany.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSFIRCompany.swift; sourceTree = "<group>"; };
+		D50BF3AB2003AA4C00BD8C87 /* WSFirebaseRequest+Vendors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WSFirebaseRequest+Vendors.swift"; sourceTree = "<group>"; };
+		D50BF3AE20040F8D00BD8C87 /* WSSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSSession.swift; sourceTree = "<group>"; };
+		D51AF84120CEFD03007C3A75 /* WSHTTPSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSHTTPSessionManager.swift; sourceTree = "<group>"; wrapsLines = 0; };
+		D51AF84320CEFFC7007C3A75 /* WSMemberWall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSMemberWall.swift; sourceTree = "<group>"; };
+		D51AF84D20CF09D7007C3A75 /* WSUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSUser.swift; sourceTree = "<group>"; };
+		D51AF84F20CF0AF9007C3A75 /* WSFirebaseSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSFirebaseSession.swift; sourceTree = "<group>"; };
+		D51DD5511FEA1B5F003A9C05 /* Routable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Routable.swift; sourceTree = "<group>"; };
+		D51DD5531FEA3494003A9C05 /* WSLoginCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSLoginCell.swift; sourceTree = "<group>"; };
+		D51DD55E1FEA45A3003A9C05 /* TableViewCell+Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TableViewCell+Protocol.swift"; sourceTree = "<group>"; };
+		D51DD5601FEA45DA003A9C05 /* Storyboard+Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Storyboard+Protocol.swift"; sourceTree = "<group>"; };
+		D51DD5621FEA46D5003A9C05 /* WSViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSViewController.swift; sourceTree = "<group>"; wrapsLines = 0; };
+		D51DD5661FEA4728003A9C05 /* WSTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSTableViewController.swift; sourceTree = "<group>"; };
+		D51DD56A1FEA484F003A9C05 /* WSTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSTableViewCell.swift; sourceTree = "<group>"; };
+		D521ED651FEBC2AA00ED187D /* WSCompanyListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSCompanyListView.swift; sourceTree = "<group>"; };
+		D521ED671FEBC2C700ED187D /* WSCompanyListProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSCompanyListProtocol.swift; sourceTree = "<group>"; };
+		D521ED691FEBC2DF00ED187D /* WSCompanyListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSCompanyListPresenter.swift; sourceTree = "<group>"; };
+		D521ED6B1FEBC2FB00ED187D /* WSCompanyListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSCompanyListCell.swift; sourceTree = "<group>"; };
+		D52FA016210B031300A61281 /* WSSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSSettingViewController.swift; sourceTree = "<group>"; };
+		D5309EAF21C9297A009D0BF7 /* UIImage+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		D5309EB021C9297B009D0BF7 /* UIWindow+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIWindow+Extension.swift"; sourceTree = "<group>"; };
+		D53F19EE20E0DC4000A7462E /* WSHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSHomeViewController.swift; sourceTree = "<group>"; };
+		D53F19F120E0EBAD00A7462E /* all_apps.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = all_apps.json; sourceTree = "<group>"; };
+		D53F19F220E0EBAD00A7462E /* TBCommonSettingProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBCommonSettingProtocols.swift; sourceTree = "<group>"; };
+		D53F19F320E0EBAD00A7462E /* TBCommonSettingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBCommonSettingView.swift; sourceTree = "<group>"; };
+		D53F19F420E0EBAD00A7462E /* TBCommonSettingPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBCommonSettingPresenter.swift; sourceTree = "<group>"; };
+		D53F19F920E1238900A7462E /* settings_white@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "settings_white@3x.png"; sourceTree = "<group>"; };
+		D53F19FB20E124DA00A7462E /* WSMeetingRoomSlotsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSMeetingRoomSlotsView.swift; sourceTree = "<group>"; wrapsLines = 0; };
+		D53F19FD20E124EF00A7462E /* WSMeetingRoomSlotsProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSMeetingRoomSlotsProtocol.swift; sourceTree = "<group>"; };
+		D53F19FF20E1250100A7462E /* WSMeetingRoomSlotsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSMeetingRoomSlotsPresenter.swift; sourceTree = "<group>"; };
+		D53F1A0120E1251000A7462E /* WSMeetingRoomSlotsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSMeetingRoomSlotsCell.swift; sourceTree = "<group>"; };
+		D53F1A0320E1252700A7462E /* WSMeetingRoomSlotsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WSMeetingRoomSlotsCell.xib; sourceTree = "<group>"; };
+		D53F1A0520E1270900A7462E /* icn_checkbox_selected_disabled@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icn_checkbox_selected_disabled@3x.png"; sourceTree = "<group>"; };
+		D53F1A0620E1270900A7462E /* icn_checkbox_unselected_enabled@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icn_checkbox_unselected_enabled@3x.png"; sourceTree = "<group>"; };
+		D53F1A0720E1270A00A7462E /* icn_checkbox_selected_enabled@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icn_checkbox_selected_enabled@3x.png"; sourceTree = "<group>"; };
+		D53F1A0B20E12A9500A7462E /* WSMeetingRoomSlot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSMeetingRoomSlot.swift; sourceTree = "<group>"; wrapsLines = 0; };
+		D53F1A0D20E1838D00A7462E /* icn_logo_small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icn_logo_small@2x.png"; sourceTree = "<group>"; };
+		D53F1A0F20E21BCA00A7462E /* WSMeetingRoomHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSMeetingRoomHistoryView.swift; sourceTree = "<group>"; wrapsLines = 0; };
+		D53F1A1120E21BE300A7462E /* WSMeetingRoomHistoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSMeetingRoomHistoryProtocol.swift; sourceTree = "<group>"; };
+		D53F1A1320E21BF400A7462E /* WSMeetingRoomHistoryPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSMeetingRoomHistoryPresenter.swift; sourceTree = "<group>"; };
+		D53F1A1520E21C0400A7462E /* WSMeetingRoomHistoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSMeetingRoomHistoryCell.swift; sourceTree = "<group>"; };
+		D53F1A1720E21C2000A7462E /* WSMeetingRoomHistoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WSMeetingRoomHistoryCell.xib; sourceTree = "<group>"; };
+		D53F1A1920E2289600A7462E /* WSMeetingRoomHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSMeetingRoomHistory.swift; sourceTree = "<group>"; };
+		D54849EB1FEAA419004AA46C /* WSForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSForgotPasswordView.swift; sourceTree = "<group>"; };
+		D54849ED1FEAA430004AA46C /* WSForgotPasswordPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSForgotPasswordPresenter.swift; sourceTree = "<group>"; };
+		D54849EF1FEAA441004AA46C /* WSForgotPasswordProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSForgotPasswordProtocol.swift; sourceTree = "<group>"; };
+		D54849F11FEAA450004AA46C /* WSForgotPasswordCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSForgotPasswordCell.swift; sourceTree = "<group>"; };
+		D54ADDF8210212F000000E11 /* WSEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSEvent.swift; sourceTree = "<group>"; };
+		D54C3FEA20BC08A9003827BD /* WSMeetingRoomListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSMeetingRoomListView.swift; sourceTree = "<group>"; };
+		D54C3FEC20BC08C5003827BD /* WSMeetingRoomListProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSMeetingRoomListProtocol.swift; sourceTree = "<group>"; };
+		D54C3FEE20BC1FA6003827BD /* WSMeetingRoomListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSMeetingRoomListPresenter.swift; sourceTree = "<group>"; };
+		D54C3FF020BC20F3003827BD /* WSTracking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WSTracking.swift; sourceTree = "<group>"; };
+		D54C3FF320BC216E003827BD /* Bundle+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle+Extension.swift"; sourceTree = "<group>"; };
+		D54C3FF420BC216E003827BD /* Data+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+Extension.swift"; sourceTree = "<group>"; };
+		D54C3FF520BC216E003827BD /* Date+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; wrapsLines = 0; };
+		D54C3FF620BC216E003827BD /* Int+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+Extension.swift"; sourceTree = "<group>"; };
+		D54C3FF720BC216E003827BD /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; wrapsLines = 0; };
+		D54C3FF820BC216E003827BD /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		D54C3FF920BC216E003827BD /* UIFont+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
+		D54C3FFA20BC216E003827BD /* UInt+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UInt+Extension.swift"; sourceTree = "<group>"; };
+		D54C3FFB20BC216E003827BD /* UserDefault+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UserDefault+Extension.swift"; sourceTree = "<group>"; };
+		D54C3FFD20BC216E003827BD /* UIAlertController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Extension.swift"; sourceTree = "<group>"; };
+		D54C3FFE20BC216E003827BD /* UIButton+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
+		D54C3FFF20BC216E003827BD /* UIDevice+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIDevice+Extension.swift"; sourceTree = "<group>"; };
+		D54C400020BC216E003827BD /* UIImageView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
+		D54C400120BC216E003827BD /* UINavigationController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Extension.swift"; sourceTree = "<group>"; };
+		D54C400220BC216E003827BD /* UIStoryboard+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Extension.swift"; sourceTree = "<group>"; };
+		D54C400320BC216E003827BD /* UITableViewCell+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Extension.swift"; sourceTree = "<group>"; };
+		D54C400420BC216E003827BD /* UITableViewController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableViewController+Extension.swift"; sourceTree = "<group>"; };
+		D54C400520BC216E003827BD /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		D54C400620BC216E003827BD /* UIViewController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		D54C400820BC216E003827BD /* Array+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Extension.swift"; sourceTree = "<group>"; };
+		D54C400920BC216E003827BD /* Dictionary+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+Extension.swift"; sourceTree = "<group>"; };
+		D54C400A20BC216E003827BD /* Error+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Error+Extension.swift"; sourceTree = "<group>"; };
+		D54C402120BC875C003827BD /* WSError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WSError.swift; sourceTree = "<group>"; };
+		D54C402220BC875C003827BD /* WSLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WSLogger.swift; sourceTree = "<group>"; };
+		D54C402320BC875D003827BD /* WSTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WSTheme.swift; sourceTree = "<group>"; };
+		D54C402720BC877B003827BD /* WSFunctional.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WSFunctional.swift; sourceTree = "<group>"; };
+		D54C402B20BC88CC003827BD /* WSMember.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSMember.swift; sourceTree = "<group>"; };
+		D54C402D20BC890C003827BD /* WSCompany.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSCompany.swift; sourceTree = "<group>"; };
+		D54C402F20BC8953003827BD /* WSMeetingRoom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSMeetingRoom.swift; sourceTree = "<group>"; };
+		D54C403120BC8992003827BD /* WSMeetingRoomBookings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSMeetingRoomBookings.swift; sourceTree = "<group>"; };
+		D551732D20C5515A005C0026 /* WSMemberWallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSMemberWallView.swift; sourceTree = "<group>"; };
+		D551732F20C5516E005C0026 /* WSMemberWallProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSMemberWallProtocol.swift; sourceTree = "<group>"; };
+		D551733120C5517E005C0026 /* WSMemberWallPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSMemberWallPresenter.swift; sourceTree = "<group>"; };
+		D551733320C57467005C0026 /* WSMemberWallCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WSMemberWallCell.xib; sourceTree = "<group>"; };
+		D551733520C577EF005C0026 /* WSMemberWallCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSMemberWallCell.swift; sourceTree = "<group>"; };
+		D551733720C57F12005C0026 /* icn_more@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icn_more@2x.png"; sourceTree = "<group>"; };
+		D551733920C5851B005C0026 /* WSMeetingRoomListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSMeetingRoomListCell.swift; sourceTree = "<group>"; };
+		D551733B20C5852A005C0026 /* WSMeetingRoomListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WSMeetingRoomListCell.xib; sourceTree = "<group>"; };
+		D551733E20C5B782005C0026 /* all_posts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = all_posts.json; sourceTree = "<group>"; };
+		D551733F20C5B782005C0026 /* single_post.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = single_post.json; sourceTree = "<group>"; };
+		D557785320DFE3DA00D10CDA /* WSAPIRequest+MeetingRooms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WSAPIRequest+MeetingRooms.swift"; sourceTree = "<group>"; wrapsLines = 0; };
+		D557785520DFE46600D10CDA /* WSAPIRequest+MemberWalls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WSAPIRequest+MemberWalls.swift"; sourceTree = "<group>"; };
+		D559402E1FF69D310004D124 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D5599C0E212B720600374BCB /* WreelySocial-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WreelySocial-Bridging-Header.h"; sourceTree = "<group>"; };
+		D564621220FCF282000E7A9E /* WSVendor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSVendor.swift; sourceTree = "<group>"; };
+		D569844921255EF70068FD85 /* WSTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSTabBarController.swift; sourceTree = "<group>"; };
+		D569844B21255F130068FD85 /* WSTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSTabBar.swift; sourceTree = "<group>"; };
+		D56C71C0214A935800F1AEC5 /* WSMemberWallCommentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSMemberWallCommentView.swift; sourceTree = "<group>"; };
+		D56C71C2214A936B00F1AEC5 /* WSMemberWallCommentProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSMemberWallCommentProtocol.swift; sourceTree = "<group>"; };
+		D56C71C4214A938200F1AEC5 /* WSMemberWallCommentPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSMemberWallCommentPresenter.swift; sourceTree = "<group>"; };
+		D56C71C6214A939300F1AEC5 /* WSMemberWallCommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSMemberWallCommentCell.swift; sourceTree = "<group>"; };
+		D5774090216A1C0A002727D0 /* WSMeetingRoomDashboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSMeetingRoomDashboard.swift; sourceTree = "<group>"; };
+		D57CD8F71FFE5A3D004452A0 /* WSNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSNavigationController.swift; sourceTree = "<group>"; };
+		D57CD8F91FFE5AC6004452A0 /* WSImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSImageView.swift; sourceTree = "<group>"; };
+		D57CD8FB1FFE6063004452A0 /* WSFirebaseRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSFirebaseRequest.swift; sourceTree = "<group>"; };
+		D57CD8FD1FFE6192004452A0 /* WSFirebaseRequest+Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WSFirebaseRequest+Users.swift"; sourceTree = "<group>"; wrapsLines = 0; };
+		D5815FEC2147D26E007F3C6C /* WSProfileWallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSProfileWallView.swift; sourceTree = "<group>"; };
+		D58246D2214B952D00909B71 /* WSMemberWallLikeCommentPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSMemberWallLikeCommentPageController.swift; sourceTree = "<group>"; };
+		D582E27F2004F7D800F6FA5C /* WSRequest+Companies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WSRequest+Companies.swift"; sourceTree = "<group>"; };
+		D582E2812004F82500F6FA5C /* WSFirebaseRequest+Companies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WSFirebaseRequest+Companies.swift"; sourceTree = "<group>"; };
+		D582E284200611FB00F6FA5C /* WSRequest+Vendors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WSRequest+Vendors.swift"; sourceTree = "<group>"; };
+		D582E2862006122A00F6FA5C /* WSRequest+Members.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WSRequest+Members.swift"; sourceTree = "<group>"; };
+		D582E2882006125D00F6FA5C /* WSFirebaseRequest+Members.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WSFirebaseRequest+Members.swift"; sourceTree = "<group>"; };
+		D582E28B2006130900F6FA5C /* WSMemberListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSMemberListView.swift; sourceTree = "<group>"; wrapsLines = 0; };
+		D582E28D2006131900F6FA5C /* WSMemberListProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSMemberListProtocol.swift; sourceTree = "<group>"; };
+		D582E28F2006132700F6FA5C /* WSMemberListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSMemberListPresenter.swift; sourceTree = "<group>"; };
+		D582E2912006133400F6FA5C /* WSMemberListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSMemberListCell.swift; sourceTree = "<group>"; };
+		D582E2932006134200F6FA5C /* WSMemberListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WSMemberListCell.xib; sourceTree = "<group>"; };
+		D58357F6200A3541009ABCAD /* WSEventListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSEventListView.swift; sourceTree = "<group>"; };
+		D58357F8200A357A009ABCAD /* WSEventListProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSEventListProtocol.swift; sourceTree = "<group>"; };
+		D58357FA200A3590009ABCAD /* WSEventListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSEventListPresenter.swift; sourceTree = "<group>"; };
+		D58357FC200A359F009ABCAD /* WSEventListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSEventListCell.swift; sourceTree = "<group>"; };
+		D58357FE200A35B5009ABCAD /* WSEventListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WSEventListCell.xib; sourceTree = "<group>"; };
+		D5835800200A3B95009ABCAD /* WSFIREvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSFIREvent.swift; sourceTree = "<group>"; };
+		D5835803200CA554009ABCAD /* WSCompanyDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSCompanyDetailView.swift; sourceTree = "<group>"; };
+		D5835805200CA568009ABCAD /* WSCompanyDetailProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSCompanyDetailProtocol.swift; sourceTree = "<group>"; };
+		D5835807200CA576009ABCAD /* WSCompanyDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSCompanyDetailPresenter.swift; sourceTree = "<group>"; };
+		D5835809200CA582009ABCAD /* WSCompanyDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSCompanyDetailCell.swift; sourceTree = "<group>"; };
+		D583580B200CA59A009ABCAD /* WSCompanyDetailCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WSCompanyDetailCell.xib; sourceTree = "<group>"; };
+		D583580E200CAA61009ABCAD /* WSMemberDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSMemberDetailView.swift; sourceTree = "<group>"; };
+		D5835810200CAA70009ABCAD /* WSMemberDetailProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSMemberDetailProtocol.swift; sourceTree = "<group>"; };
+		D5835812200CAA84009ABCAD /* WSMemberDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSMemberDetailPresenter.swift; sourceTree = "<group>"; };
+		D5835814200CAA90009ABCAD /* WSMemberDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSMemberDetailCell.swift; sourceTree = "<group>"; };
+		D5835816200CAA9E009ABCAD /* WSMemberDetailCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WSMemberDetailCell.xib; sourceTree = "<group>"; };
+		D5835819200CACEC009ABCAD /* WSEventDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSEventDetailView.swift; sourceTree = "<group>"; };
+		D583581B200CACFA009ABCAD /* WSEventDetailProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSEventDetailProtocol.swift; sourceTree = "<group>"; };
+		D583581D200CAD06009ABCAD /* WSEventDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSEventDetailPresenter.swift; sourceTree = "<group>"; };
+		D583581F200CAD13009ABCAD /* WSEventDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSEventDetailCell.swift; sourceTree = "<group>"; };
+		D5835821200CAD20009ABCAD /* WSEventDetailCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WSEventDetailCell.xib; sourceTree = "<group>"; };
+		D58B8A0F20F38A13008114E9 /* WSOTPView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSOTPView.swift; sourceTree = "<group>"; wrapsLines = 0; };
+		D58B8A1120F38A25008114E9 /* WSOTPPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSOTPPresenter.swift; sourceTree = "<group>"; };
+		D58B8A1320F38A36008114E9 /* WSOTPProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSOTPProtocol.swift; sourceTree = "<group>"; };
+		D58B8A1520F38A45008114E9 /* WSOTPCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSOTPCell.swift; sourceTree = "<group>"; };
+		D58B8A1720F38A5D008114E9 /* WSOTPConfirmationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSOTPConfirmationView.swift; sourceTree = "<group>"; wrapsLines = 0; };
+		D58B8A1920F38A72008114E9 /* WSOTPConfirmationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSOTPConfirmationPresenter.swift; sourceTree = "<group>"; };
+		D58B8A1B20F38A8B008114E9 /* WSOTPConfirmationProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSOTPConfirmationProtocol.swift; sourceTree = "<group>"; };
+		D58B8A1D20F38A9A008114E9 /* WSOTPConfirmationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSOTPConfirmationCell.swift; sourceTree = "<group>"; };
+		D58D45CC21491B48009FD825 /* WSProfileWallProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSProfileWallProtocol.swift; sourceTree = "<group>"; };
+		D58D45CE21491B6C009FD825 /* WSProfileWallPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSProfileWallPresenter.swift; sourceTree = "<group>"; };
+		D58D45D021491BA3009FD825 /* WSProfileWallCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSProfileWallCell.swift; sourceTree = "<group>"; };
+		D599DA4E214EF400006CC0FD /* WSGroupListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSGroupListView.swift; sourceTree = "<group>"; };
+		D599DA50214EF427006CC0FD /* WSGroupListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSGroupListCell.swift; sourceTree = "<group>"; };
+		D599DA52214EF875006CC0FD /* WSGroupListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSGroupListPresenter.swift; sourceTree = "<group>"; };
+		D599DA54214EF888006CC0FD /* WSGroupListProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSGroupListProtocol.swift; sourceTree = "<group>"; };
+		D59C6A6A2142613A00790AED /* WSMemberWallPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSMemberWallPostView.swift; sourceTree = "<group>"; wrapsLines = 0; };
+		D59C6A6C2142614E00790AED /* WSMemberWallPostProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSMemberWallPostProtocol.swift; sourceTree = "<group>"; };
+		D59C6A6E2142615E00790AED /* WSMemberWallPostPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSMemberWallPostPresenter.swift; sourceTree = "<group>"; };
+		D59C6A702142619500790AED /* WSMemberWallPostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSMemberWallPostCell.swift; sourceTree = "<group>"; };
+		D59C931F21467F5200B62BA5 /* WSMemberWallLikeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSMemberWallLikeView.swift; sourceTree = "<group>"; };
+		D59C932121467F9300B62BA5 /* WSMemberWallLikeProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSMemberWallLikeProtocol.swift; sourceTree = "<group>"; };
+		D59C932321467FA300B62BA5 /* WSMemberWallLikePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSMemberWallLikePresenter.swift; sourceTree = "<group>"; };
+		D59C932521467FB400B62BA5 /* WSMemberWallLikeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSMemberWallLikeCell.swift; sourceTree = "<group>"; };
+		D59F3539212FE43A00CC6B58 /* WSMemberCompanyPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSMemberCompanyPageController.swift; sourceTree = "<group>"; wrapsLines = 0; };
+		D5A6039B212DF6B9004224F5 /* dark.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = dark.json; sourceTree = "<group>"; };
+		D5A6039D212E02C9004224F5 /* silver.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = silver.json; sourceTree = "<group>"; };
+		D5AEBF461FF6E03F0098C841 /* WSFirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSFirebaseManager.swift; sourceTree = "<group>"; wrapsLines = 0; };
+		D5AEBF481FF6E3E70098C841 /* WSDBRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSDBRequest.swift; sourceTree = "<group>"; };
+		D5AEBF4A1FF6E4450098C841 /* WSDatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSDatabaseManager.swift; sourceTree = "<group>"; };
+		D5AEBF4E1FF6E4AB0098C841 /* WSDBRequest+Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WSDBRequest+Users.swift"; sourceTree = "<group>"; };
+		D5B967042122EF80006C2C09 /* WSWorkspace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSWorkspace.swift; sourceTree = "<group>"; };
+		D5B9671D2122FCEF006C2C09 /* UIView+Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Protocol.swift"; sourceTree = "<group>"; };
+		D5B9671F2122FDF6006C2C09 /* UIViewController+Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Protocol.swift"; sourceTree = "<group>"; };
+		D5B96721212309E5006C2C09 /* WSRequest+Workspaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WSRequest+Workspaces.swift"; sourceTree = "<group>"; };
+		D5B96723212309FD006C2C09 /* WSAPIRequest+Workspaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WSAPIRequest+Workspaces.swift"; sourceTree = "<group>"; };
+		D5C420B61FED10F900483BA4 /* 3-logo-large.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "3-logo-large.png"; sourceTree = "<group>"; };
+		D5C420B71FED10F900483BA4 /* 3-logo-medium.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "3-logo-medium.png"; sourceTree = "<group>"; };
+		D5C420B81FED10F900483BA4 /* 3-logo-mini.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "3-logo-mini.png"; sourceTree = "<group>"; };
+		D5C420BA1FED10F900483BA4 /* 7-logo-large.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "7-logo-large.png"; sourceTree = "<group>"; };
+		D5C420BB1FED10F900483BA4 /* 7-logo-medium.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "7-logo-medium.png"; sourceTree = "<group>"; };
+		D5C420BC1FED10F900483BA4 /* 7-logo-mini.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "7-logo-mini.png"; sourceTree = "<group>"; };
+		D5C420BE1FED10F900483BA4 /* 8-logo-large.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "8-logo-large.png"; sourceTree = "<group>"; };
+		D5C420BF1FED10F900483BA4 /* 8-logo-medium.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "8-logo-medium.png"; sourceTree = "<group>"; };
+		D5C420C01FED10F900483BA4 /* 8-logo-mini.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "8-logo-mini.png"; sourceTree = "<group>"; };
+		D5C420CA1FED375100483BA4 /* WSCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSCollectionViewController.swift; sourceTree = "<group>"; };
+		D5CC1B03210314F5004E8BCE /* WSRequest+Events.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WSRequest+Events.swift"; sourceTree = "<group>"; wrapsLines = 0; };
+		D5CC1B052103152E004E8BCE /* WSAPIRequest+Events.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WSAPIRequest+Events.swift"; sourceTree = "<group>"; };
+		D5CC1B0721032190004E8BCE /* WSButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSButton.swift; sourceTree = "<group>"; };
+		D5CC1B0921034618004E8BCE /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
+		D5CE646D214BF86600D6A58B /* WSMemberGroupChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSMemberGroupChatView.swift; sourceTree = "<group>"; };
+		D5D241D71FF3D89F00E9DF3C /* WSCompanyListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WSCompanyListCell.xib; sourceTree = "<group>"; };
+		D5D241D91FF3D9AA00E9DF3C /* WSCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSCollectionViewCell.swift; sourceTree = "<group>"; };
+		D5D241DC1FF40C0F00E9DF3C /* WSSideMenuRootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSSideMenuRootViewController.swift; sourceTree = "<group>"; wrapsLines = 0; };
+		D5D241DF1FF4CCFA00E9DF3C /* WSMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSMainViewController.swift; sourceTree = "<group>"; };
+		D5D241E11FF5119A00E9DF3C /* WSSideMenuNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSSideMenuNavigationController.swift; sourceTree = "<group>"; };
+		D5DEB76B20C4889D0088A9B6 /* icn_rectangle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icn_rectangle@2x.png"; sourceTree = "<group>"; };
+		D5DEB76D20C48B970088A9B6 /* icn_left_arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icn_left_arrow@2x.png"; sourceTree = "<group>"; };
+		D5DEB77020C48C7F0088A9B6 /* FSMe-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FSMe-Bold.otf"; sourceTree = "<group>"; };
+		D5DEB77120C48C7F0088A9B6 /* FSMe-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FSMe-BoldItalic.otf"; sourceTree = "<group>"; };
+		D5DEB77220C48C7F0088A9B6 /* FSMe-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FSMe-Heavy.otf"; sourceTree = "<group>"; };
+		D5DEB77320C48C7F0088A9B6 /* FSMe-HeavyItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FSMe-HeavyItalic.otf"; sourceTree = "<group>"; };
+		D5DEB77420C48C7F0088A9B6 /* FSMe-Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FSMe-Italic.otf"; sourceTree = "<group>"; };
+		D5DEB77520C48C7F0088A9B6 /* FSMe-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FSMe-Light.otf"; sourceTree = "<group>"; };
+		D5DEB77620C48C7F0088A9B6 /* FSMe-LightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FSMe-LightItalic.otf"; sourceTree = "<group>"; };
+		D5DEB77720C48C7F0088A9B6 /* FSMe-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FSMe-Regular.otf"; sourceTree = "<group>"; };
+		D5E57EBF20F0E5030054481A /* WreelySocial.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WreelySocial.entitlements; sourceTree = "<group>"; };
+		D5E8EF5C20E0193100409F70 /* WSAPIRequest+Companies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WSAPIRequest+Companies.swift"; sourceTree = "<group>"; };
+		D5E8EF5E20E0193F00409F70 /* WSAPIRequest+Members.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WSAPIRequest+Members.swift"; sourceTree = "<group>"; };
+		D5E8EF6020E0196700409F70 /* WSRequest+MeetingRoom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WSRequest+MeetingRoom.swift"; sourceTree = "<group>"; };
+		D5E8EF6320E029D800409F70 /* MessageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageTableViewCell.swift; sourceTree = "<group>"; };
+		D5E8EF6420E029D800409F70 /* TBChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBChatViewController.swift; sourceTree = "<group>"; };
+		D5E8EF6520E029D800409F70 /* MessageBubbleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageBubbleView.swift; sourceTree = "<group>"; };
+		D5E8EF6920E02B2700409F70 /* WSFIRMessages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSFIRMessages.swift; sourceTree = "<group>"; };
+		D5E8EF6E20E0B0AE00409F70 /* WSBasicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSBasicViewController.swift; sourceTree = "<group>"; };
+		D5EACD9F1FFD80AD00F821E6 /* WSWorkspaceSelectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WSWorkspaceSelectionCell.xib; sourceTree = "<group>"; };
+		D5EACDA11FFD854E00F821E6 /* wreely_logo_circle_large@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wreely_logo_circle_large@2x.png"; sourceTree = "<group>"; };
+		D5EACDA21FFD855000F821E6 /* wreely_logo_circle_medium@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wreely_logo_circle_medium@2x.png"; sourceTree = "<group>"; };
+		D5EBE155213D35AA0058B337 /* WSMemberWallLikes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSMemberWallLikes.swift; sourceTree = "<group>"; };
+		D5EBE157213D35CB0058B337 /* WSMemberWallComments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSMemberWallComments.swift; sourceTree = "<group>"; };
+		D5EBE159213D39130058B337 /* WSRequest+MemberWalls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WSRequest+MemberWalls.swift"; sourceTree = "<group>"; };
+		D5EDF6AF1FF7051200CDF37C /* wreely-819a2-firebase-crashreporting-98g70-52356fa525.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "wreely-819a2-firebase-crashreporting-98g70-52356fa525.json"; sourceTree = "<group>"; };
+		D5EDF6B21FF7CEA000CDF37C /* WSWorkspaceSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSWorkspaceSelectionView.swift; sourceTree = "<group>"; wrapsLines = 0; };
+		D5EDF6B41FF7CEB300CDF37C /* WSWorkspaceSelectionPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSWorkspaceSelectionPresenter.swift; sourceTree = "<group>"; wrapsLines = 0; };
+		D5EDF6B61FF7CEC600CDF37C /* WSWorkspaceSelectionProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSWorkspaceSelectionProtocols.swift; sourceTree = "<group>"; };
+		D5EDF6B81FF7CF6B00CDF37C /* WSWorkspaceSelectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSWorkspaceSelectionCell.swift; sourceTree = "<group>"; };
+		D5F24FC51FE8F97100FA4040 /* WreelySocial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WreelySocial.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5F24FCD1FE8F97100FA4040 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D5F24FCF1FE8F97100FA4040 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D5F24FD21FE8F97100FA4040 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D5F24FD41FE8F97100FA4040 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5F24FD91FE8F97100FA4040 /* WreelySocialTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WreelySocialTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5F24FDD1FE8F97100FA4040 /* WreelySocialTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WreelySocialTests.swift; sourceTree = "<group>"; };
+		D5F24FDF1FE8F97100FA4040 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5F24FE41FE8F97100FA4040 /* WreelySocialUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WreelySocialUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5F24FE81FE8F97100FA4040 /* WreelySocialUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WreelySocialUITests.swift; sourceTree = "<group>"; };
+		D5F24FEA1FE8F97100FA4040 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5F250291FE9151300FA4040 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; wrapsLines = 0; };
+		D5F2502F1FE9151300FA4040 /* WSAPIRequest+Users.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WSAPIRequest+Users.swift"; sourceTree = "<group>"; };
+		D5F250311FE9151300FA4040 /* WSAPIConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WSAPIConstant.swift; sourceTree = "<group>"; };
+		D5F250321FE9151300FA4040 /* WSAPIRequestType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WSAPIRequestType.swift; sourceTree = "<group>"; };
+		D5F250331FE9151300FA4040 /* WSAPIStringUrl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WSAPIStringUrl.swift; sourceTree = "<group>"; wrapsLines = 0; };
+		D5F250341FE9151300FA4040 /* WSAPIRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WSAPIRequest.swift; sourceTree = "<group>"; };
+		D5F250351FE9151300FA4040 /* WSConnectionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WSConnectionManager.swift; sourceTree = "<group>"; wrapsLines = 0; };
+		D5F250381FE9151300FA4040 /* WSRequest+User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WSRequest+User.swift"; sourceTree = "<group>"; };
+		D5F250391FE9151300FA4040 /* WSRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WSRequest.swift; sourceTree = "<group>"; };
+		D5F2503F1FE9151300FA4040 /* WSConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WSConstant.swift; sourceTree = "<group>"; wrapsLines = 0; };
+		D5F250441FE9151300FA4040 /* WSSplashPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WSSplashPresenter.swift; sourceTree = "<group>"; };
+		D5F250451FE9151300FA4040 /* WSSplashView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WSSplashView.swift; sourceTree = "<group>"; };
+		D5F250561FE915E800FA4040 /* ic_wreely_splash@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_wreely_splash@2x.png"; sourceTree = "<group>"; };
+		D5F250581FE91B6000FA4040 /* WSSplashProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSSplashProtocols.swift; sourceTree = "<group>"; };
+		D5F2505C1FE927DE00FA4040 /* WSLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSLoginView.swift; sourceTree = "<group>"; };
+		D5F2505E1FE927F100FA4040 /* WSLoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSLoginPresenter.swift; sourceTree = "<group>"; };
+		D5F250601FE9280300FA4040 /* WSLoginProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSLoginProtocol.swift; sourceTree = "<group>"; };
+		D5F70B442107458D009E9780 /* SWTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWTabBar.swift; sourceTree = "<group>"; };
+		D5F70B452107458E009E9780 /* SWTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWTabBarController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D5F24FC21FE8F97100FA4040 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01830C8A1E84F138F9B0494C /* Pods_WreelySocial.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5F24FD61FE8F97100FA4040 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4FD8F4395D99E075D79B118 /* Pods_WreelySocialTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5F24FE11FE8F97100FA4040 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		342B6DCEFE7899AC182305F4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				82B53ACEB957C0E787C22B84 /* Pods-WreelySocial.debug.xcconfig */,
+				59932F1A5A213BD2F9BF3F20 /* Pods-WreelySocial.release.xcconfig */,
+				38F3BBD53CA4F360C8215148 /* Pods-WreelySocial.debug beta.xcconfig */,
+				4EEAD396537CF0447301172F /* Pods-WreelySocial.release beta.xcconfig */,
+				D476B183626E96AD773F05BE /* Pods-WreelySocialTests.debug.xcconfig */,
+				35763C9928CDFE75B0649680 /* Pods-WreelySocialTests.debug beta.xcconfig */,
+				69CDC9D6326CFC67E2BB9FCC /* Pods-WreelySocialTests.release.xcconfig */,
+				632CD12B2200979CCBCBE41A /* Pods-WreelySocialTests.release beta.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D50BF3AD20040F7700BD8C87 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				D50BF3AE20040F8D00BD8C87 /* WSSession.swift */,
+				D51AF84F20CF0AF9007C3A75 /* WSFirebaseSession.swift */,
+				D54C402720BC877B003827BD /* WSFunctional.swift */,
+				D54C402120BC875C003827BD /* WSError.swift */,
+				D54C402220BC875C003827BD /* WSLogger.swift */,
+				D54C402320BC875D003827BD /* WSTheme.swift */,
+				D54C3FF020BC20F3003827BD /* WSTracking.swift */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		D51DD5551FEA3B47003A9C05 /* UITableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				D51DD55E1FEA45A3003A9C05 /* TableViewCell+Protocol.swift */,
+			);
+			path = UITableViewCell;
+			sourceTree = "<group>";
+		};
+		D51DD5561FEA3B91003A9C05 /* UIStoryboard */ = {
+			isa = PBXGroup;
+			children = (
+				D51DD5511FEA1B5F003A9C05 /* Routable.swift */,
+				D51DD5601FEA45DA003A9C05 /* Storyboard+Protocol.swift */,
+			);
+			path = UIStoryboard;
+			sourceTree = "<group>";
+		};
+		D51DD56C1FEA4968003A9C05 /* WSLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				D5599BDE212B6D1A00374BCB /* Static */,
+				D50BF3AD20040F7700BD8C87 /* Class */,
+				D5F2503F1FE9151300FA4040 /* WSConstant.swift */,
+				D51DD56D1FEA49C8003A9C05 /* WSModel */,
+				D5F250401FE9151300FA4040 /* WSView */,
+				D5F2502C1FE9151300FA4040 /* WSConnection */,
+			);
+			path = WSLibrary;
+			sourceTree = "<group>";
+		};
+		D51DD56D1FEA49C8003A9C05 /* WSModel */ = {
+			isa = PBXGroup;
+			children = (
+				D54C402A20BC88B0003827BD /* ClassModel */,
+				D54C402920BC88A9003827BD /* FIRModel */,
+			);
+			path = WSModel;
+			sourceTree = "<group>";
+		};
+		D521ED641FEBC25900ED187D /* WSCompany */ = {
+			isa = PBXGroup;
+			children = (
+				D5E8EF7320E0B79F00409F70 /* WSCompanyList */,
+				D5835802200CA537009ABCAD /* WSCompanyDetail */,
+			);
+			path = WSCompany;
+			sourceTree = "<group>";
+		};
+		D526BC06211C29600095996E /* UITableView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UITableView;
+			sourceTree = "<group>";
+		};
+		D526BC07211C296C0095996E /* UICollectionView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UICollectionView;
+			sourceTree = "<group>";
+		};
+		D53F19F020E0EB8300A7462E /* WSSetting */ = {
+			isa = PBXGroup;
+			children = (
+				D53F19F120E0EBAD00A7462E /* all_apps.json */,
+				D53F19F420E0EBAD00A7462E /* TBCommonSettingPresenter.swift */,
+				D53F19F220E0EBAD00A7462E /* TBCommonSettingProtocols.swift */,
+				D53F19F320E0EBAD00A7462E /* TBCommonSettingView.swift */,
+				D52FA016210B031300A61281 /* WSSettingViewController.swift */,
+			);
+			path = WSSetting;
+			sourceTree = "<group>";
+		};
+		D546DE1021821D4300430003 /* ThirdParty */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ThirdParty;
+			sourceTree = "<group>";
+		};
+		D54849EA1FEAA3EC004AA46C /* WSForgotPassword */ = {
+			isa = PBXGroup;
+			children = (
+				D54849EB1FEAA419004AA46C /* WSForgotPasswordView.swift */,
+				D54849ED1FEAA430004AA46C /* WSForgotPasswordPresenter.swift */,
+				D54849EF1FEAA441004AA46C /* WSForgotPasswordProtocol.swift */,
+				D54849F11FEAA450004AA46C /* WSForgotPasswordCell.swift */,
+			);
+			path = WSForgotPassword;
+			sourceTree = "<group>";
+		};
+		D54C3FE920BC0881003827BD /* WSMeetingRoom */ = {
+			isa = PBXGroup;
+			children = (
+				D5E8EF6D20E0AF5A00409F70 /* WSRoomHistory */,
+				D5E8EF6C20E0AF4300409F70 /* WSRoomSlots */,
+				D5E8EF6B20E0AF3800409F70 /* WSRoomList */,
+			);
+			path = WSMeetingRoom;
+			sourceTree = "<group>";
+		};
+		D54C3FF220BC216E003827BD /* OtherClasses */ = {
+			isa = PBXGroup;
+			children = (
+				D54C3FF320BC216E003827BD /* Bundle+Extension.swift */,
+				D5309EAF21C9297A009D0BF7 /* UIImage+Extension.swift */,
+				D5309EB021C9297B009D0BF7 /* UIWindow+Extension.swift */,
+				D54C3FF420BC216E003827BD /* Data+Extension.swift */,
+				D54C3FF520BC216E003827BD /* Date+Extension.swift */,
+				D54C3FF620BC216E003827BD /* Int+Extension.swift */,
+				D54C3FF720BC216E003827BD /* String+Extension.swift */,
+				D54C3FF820BC216E003827BD /* UIColor+Extension.swift */,
+				D54C3FF920BC216E003827BD /* UIFont+Extension.swift */,
+				D54C3FFA20BC216E003827BD /* UInt+Extension.swift */,
+				D54C3FFB20BC216E003827BD /* UserDefault+Extension.swift */,
+			);
+			path = OtherClasses;
+			sourceTree = "<group>";
+		};
+		D54C3FFC20BC216E003827BD /* UIControls */ = {
+			isa = PBXGroup;
+			children = (
+				D54C3FFD20BC216E003827BD /* UIAlertController+Extension.swift */,
+				D54C3FFE20BC216E003827BD /* UIButton+Extension.swift */,
+				D54C3FFF20BC216E003827BD /* UIDevice+Extension.swift */,
+				D54C400020BC216E003827BD /* UIImageView+Extension.swift */,
+				D54C400120BC216E003827BD /* UINavigationController+Extension.swift */,
+				D54C400220BC216E003827BD /* UIStoryboard+Extension.swift */,
+				D54C400320BC216E003827BD /* UITableViewCell+Extension.swift */,
+				D54C400420BC216E003827BD /* UITableViewController+Extension.swift */,
+				D54C400520BC216E003827BD /* UIView+Extension.swift */,
+				D5CC1B0921034618004E8BCE /* UITableView+Extension.swift */,
+				D54C400620BC216E003827BD /* UIViewController+Extension.swift */,
+			);
+			path = UIControls;
+			sourceTree = "<group>";
+		};
+		D54C400720BC216E003827BD /* CollectionTypes */ = {
+			isa = PBXGroup;
+			children = (
+				D54C400820BC216E003827BD /* Array+Extension.swift */,
+				D54C400920BC216E003827BD /* Dictionary+Extension.swift */,
+				D54C400A20BC216E003827BD /* Error+Extension.swift */,
+			);
+			path = CollectionTypes;
+			sourceTree = "<group>";
+		};
+		D54C402920BC88A9003827BD /* FIRModel */ = {
+			isa = PBXGroup;
+			children = (
+				D50BF3A520037EB500BD8C87 /* WSFIRVendor.swift */,
+				D50BF3A72003826000BD8C87 /* WSFIRUser.swift */,
+				D50BF3A92003826E00BD8C87 /* WSFIRCompany.swift */,
+				D5835800200A3B95009ABCAD /* WSFIREvent.swift */,
+				D5E8EF6920E02B2700409F70 /* WSFIRMessages.swift */,
+			);
+			path = FIRModel;
+			sourceTree = "<group>";
+		};
+		D54C402A20BC88B0003827BD /* ClassModel */ = {
+			isa = PBXGroup;
+			children = (
+				D54C402B20BC88CC003827BD /* WSMember.swift */,
+				D5B967042122EF80006C2C09 /* WSWorkspace.swift */,
+				D564621220FCF282000E7A9E /* WSVendor.swift */,
+				D51AF84320CEFFC7007C3A75 /* WSMemberWall.swift */,
+				D5EBE155213D35AA0058B337 /* WSMemberWallLikes.swift */,
+				D5EBE157213D35CB0058B337 /* WSMemberWallComments.swift */,
+				D54C402D20BC890C003827BD /* WSCompany.swift */,
+				D54C402F20BC8953003827BD /* WSMeetingRoom.swift */,
+				D5774090216A1C0A002727D0 /* WSMeetingRoomDashboard.swift */,
+				D53F1A0B20E12A9500A7462E /* WSMeetingRoomSlot.swift */,
+				D53F1A1920E2289600A7462E /* WSMeetingRoomHistory.swift */,
+				D54C403120BC8992003827BD /* WSMeetingRoomBookings.swift */,
+				D51AF84D20CF09D7007C3A75 /* WSUser.swift */,
+				D54ADDF8210212F000000E11 /* WSEvent.swift */,
+			);
+			path = ClassModel;
+			sourceTree = "<group>";
+		};
+		D550C9562147A9C90005F17E /* WSProfile */ = {
+			isa = PBXGroup;
+			children = (
+				D550C9572147AA5D0005F17E /* WSProfileWall */,
+			);
+			path = WSProfile;
+			sourceTree = "<group>";
+		};
+		D550C9572147AA5D0005F17E /* WSProfileWall */ = {
+			isa = PBXGroup;
+			children = (
+				D5815FEC2147D26E007F3C6C /* WSProfileWallView.swift */,
+				D58D45CC21491B48009FD825 /* WSProfileWallProtocol.swift */,
+				D58D45CE21491B6C009FD825 /* WSProfileWallPresenter.swift */,
+				D58D45D021491BA3009FD825 /* WSProfileWallCell.swift */,
+			);
+			path = WSProfileWall;
+			sourceTree = "<group>";
+		};
+		D551732C20C5512C005C0026 /* WSMemberWall */ = {
+			isa = PBXGroup;
+			children = (
+				D551732D20C5515A005C0026 /* WSMemberWallView.swift */,
+				D551732F20C5516E005C0026 /* WSMemberWallProtocol.swift */,
+				D551733120C5517E005C0026 /* WSMemberWallPresenter.swift */,
+				D551733520C577EF005C0026 /* WSMemberWallCell.swift */,
+				D551733320C57467005C0026 /* WSMemberWallCell.xib */,
+			);
+			path = WSMemberWall;
+			sourceTree = "<group>";
+		};
+		D551733D20C5B782005C0026 /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				D551733E20C5B782005C0026 /* all_posts.json */,
+				D5A6039A212DF67E004224F5 /* map_theme */,
+				D551733F20C5B782005C0026 /* single_post.json */,
+			);
+			path = Files;
+			sourceTree = "<group>";
+		};
+		D5599BDE212B6D1A00374BCB /* Static */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Static;
+			sourceTree = "<group>";
+		};
+		D573DC841FE95A2F00612E98 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				D5B9671C2122FCD8006C2C09 /* UIView */,
+				D5B9671B2122FCB2006C2C09 /* UIViewController */,
+				D526BC07211C296C0095996E /* UICollectionView */,
+				D526BC06211C29600095996E /* UITableView */,
+				D51DD5561FEA3B91003A9C05 /* UIStoryboard */,
+				D51DD5551FEA3B47003A9C05 /* UITableViewCell */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		D58246D1214B94E300909B71 /* WSMemberWallLikeCommentPageController */ = {
+			isa = PBXGroup;
+			children = (
+				D58246D2214B952D00909B71 /* WSMemberWallLikeCommentPageController.swift */,
+			);
+			path = WSMemberWallLikeCommentPageController;
+			sourceTree = "<group>";
+		};
+		D582E28A200612EA00F6FA5C /* WSMember */ = {
+			isa = PBXGroup;
+			children = (
+				D5E8EF7220E0B78500409F70 /* WSMemberList */,
+				D583580D200CAA43009ABCAD /* WSMemberDetail */,
+			);
+			path = WSMember;
+			sourceTree = "<group>";
+		};
+		D58357F5200A3520009ABCAD /* WSEvent */ = {
+			isa = PBXGroup;
+			children = (
+				D5E8EF7020E0B6FD00409F70 /* WSEventList */,
+				D5835818200CACD3009ABCAD /* WSEventDetail */,
+			);
+			path = WSEvent;
+			sourceTree = "<group>";
+		};
+		D5835802200CA537009ABCAD /* WSCompanyDetail */ = {
+			isa = PBXGroup;
+			children = (
+				D5835803200CA554009ABCAD /* WSCompanyDetailView.swift */,
+				D5835805200CA568009ABCAD /* WSCompanyDetailProtocol.swift */,
+				D5835807200CA576009ABCAD /* WSCompanyDetailPresenter.swift */,
+				D5835809200CA582009ABCAD /* WSCompanyDetailCell.swift */,
+				D583580B200CA59A009ABCAD /* WSCompanyDetailCell.xib */,
+			);
+			path = WSCompanyDetail;
+			sourceTree = "<group>";
+		};
+		D583580D200CAA43009ABCAD /* WSMemberDetail */ = {
+			isa = PBXGroup;
+			children = (
+				D583580E200CAA61009ABCAD /* WSMemberDetailView.swift */,
+				D5835810200CAA70009ABCAD /* WSMemberDetailProtocol.swift */,
+				D5835812200CAA84009ABCAD /* WSMemberDetailPresenter.swift */,
+				D5835814200CAA90009ABCAD /* WSMemberDetailCell.swift */,
+				D5835816200CAA9E009ABCAD /* WSMemberDetailCell.xib */,
+			);
+			path = WSMemberDetail;
+			sourceTree = "<group>";
+		};
+		D5835818200CACD3009ABCAD /* WSEventDetail */ = {
+			isa = PBXGroup;
+			children = (
+				D5835819200CACEC009ABCAD /* WSEventDetailView.swift */,
+				D583581B200CACFA009ABCAD /* WSEventDetailProtocol.swift */,
+				D583581D200CAD06009ABCAD /* WSEventDetailPresenter.swift */,
+				D583581F200CAD13009ABCAD /* WSEventDetailCell.swift */,
+				D5835821200CAD20009ABCAD /* WSEventDetailCell.xib */,
+			);
+			path = WSEventDetail;
+			sourceTree = "<group>";
+		};
+		D58B355E21456FC700BD70CB /* WSMemberWallLike */ = {
+			isa = PBXGroup;
+			children = (
+				D59C931F21467F5200B62BA5 /* WSMemberWallLikeView.swift */,
+				D59C932121467F9300B62BA5 /* WSMemberWallLikeProtocol.swift */,
+				D59C932321467FA300B62BA5 /* WSMemberWallLikePresenter.swift */,
+				D59C932521467FB400B62BA5 /* WSMemberWallLikeCell.swift */,
+			);
+			path = WSMemberWallLike;
+			sourceTree = "<group>";
+		};
+		D58B355F21456FD600BD70CB /* WSMemberWallComment */ = {
+			isa = PBXGroup;
+			children = (
+				D56C71C0214A935800F1AEC5 /* WSMemberWallCommentView.swift */,
+				D56C71C2214A936B00F1AEC5 /* WSMemberWallCommentProtocol.swift */,
+				D56C71C4214A938200F1AEC5 /* WSMemberWallCommentPresenter.swift */,
+				D56C71C6214A939300F1AEC5 /* WSMemberWallCommentCell.swift */,
+			);
+			path = WSMemberWallComment;
+			sourceTree = "<group>";
+		};
+		D58B8A0B20F387B0008114E9 /* WSOTPLogin */ = {
+			isa = PBXGroup;
+			children = (
+				D58B8A0E20F389D6008114E9 /* WSOTPConfirmation */,
+				D58B8A0D20F3899E008114E9 /* WSOTP */,
+			);
+			path = WSOTPLogin;
+			sourceTree = "<group>";
+		};
+		D58B8A0C20F38973008114E9 /* WSNormalLogin */ = {
+			isa = PBXGroup;
+			children = (
+				D5F2505A1FE9271F00FA4040 /* WSLogin */,
+				D54849EA1FEAA3EC004AA46C /* WSForgotPassword */,
+			);
+			path = WSNormalLogin;
+			sourceTree = "<group>";
+		};
+		D58B8A0D20F3899E008114E9 /* WSOTP */ = {
+			isa = PBXGroup;
+			children = (
+				D58B8A0F20F38A13008114E9 /* WSOTPView.swift */,
+				D58B8A1120F38A25008114E9 /* WSOTPPresenter.swift */,
+				D58B8A1320F38A36008114E9 /* WSOTPProtocol.swift */,
+				D58B8A1520F38A45008114E9 /* WSOTPCell.swift */,
+			);
+			path = WSOTP;
+			sourceTree = "<group>";
+		};
+		D58B8A0E20F389D6008114E9 /* WSOTPConfirmation */ = {
+			isa = PBXGroup;
+			children = (
+				D58B8A1720F38A5D008114E9 /* WSOTPConfirmationView.swift */,
+				D58B8A1920F38A72008114E9 /* WSOTPConfirmationPresenter.swift */,
+				D58B8A1B20F38A8B008114E9 /* WSOTPConfirmationProtocol.swift */,
+				D58B8A1D20F38A9A008114E9 /* WSOTPConfirmationCell.swift */,
+			);
+			path = WSOTPConfirmation;
+			sourceTree = "<group>";
+		};
+		D599DA4D214EF352006CC0FD /* WSGroupList */ = {
+			isa = PBXGroup;
+			children = (
+				D599DA4E214EF400006CC0FD /* WSGroupListView.swift */,
+				D599DA52214EF875006CC0FD /* WSGroupListPresenter.swift */,
+				D599DA54214EF888006CC0FD /* WSGroupListProtocol.swift */,
+				D599DA50214EF427006CC0FD /* WSGroupListCell.swift */,
+			);
+			path = WSGroupList;
+			sourceTree = "<group>";
+		};
+		D59C6A692142610C00790AED /* WSMemberWallPost */ = {
+			isa = PBXGroup;
+			children = (
+				D59C6A6A2142613A00790AED /* WSMemberWallPostView.swift */,
+				D59C6A6C2142614E00790AED /* WSMemberWallPostProtocol.swift */,
+				D59C6A6E2142615E00790AED /* WSMemberWallPostPresenter.swift */,
+				D59C6A702142619500790AED /* WSMemberWallPostCell.swift */,
+			);
+			path = WSMemberWallPost;
+			sourceTree = "<group>";
+		};
+		D59F3536212FE3F800CC6B58 /* WSMemberCompanyPageController */ = {
+			isa = PBXGroup;
+			children = (
+				D59F3539212FE43A00CC6B58 /* WSMemberCompanyPageController.swift */,
+			);
+			path = WSMemberCompanyPageController;
+			sourceTree = "<group>";
+		};
+		D5A6039A212DF67E004224F5 /* map_theme */ = {
+			isa = PBXGroup;
+			children = (
+				D5A6039B212DF6B9004224F5 /* dark.json */,
+				D5A6039D212E02C9004224F5 /* silver.json */,
+			);
+			path = map_theme;
+			sourceTree = "<group>";
+		};
+		D5AEBF451FF6E00F0098C841 /* RealtimeDatabase */ = {
+			isa = PBXGroup;
+			children = (
+				D5AEBF461FF6E03F0098C841 /* WSFirebaseManager.swift */,
+				D57CD8FB1FFE6063004452A0 /* WSFirebaseRequest.swift */,
+				D57CD8FD1FFE6192004452A0 /* WSFirebaseRequest+Users.swift */,
+				D50BF3AB2003AA4C00BD8C87 /* WSFirebaseRequest+Vendors.swift */,
+				D582E2812004F82500F6FA5C /* WSFirebaseRequest+Companies.swift */,
+				D582E2882006125D00F6FA5C /* WSFirebaseRequest+Members.swift */,
+			);
+			path = RealtimeDatabase;
+			sourceTree = "<group>";
+		};
+		D5AEBF4C1FF6E4510098C841 /* DBRequest */ = {
+			isa = PBXGroup;
+			children = (
+				D5AEBF4E1FF6E4AB0098C841 /* WSDBRequest+Users.swift */,
+			);
+			path = DBRequest;
+			sourceTree = "<group>";
+		};
+		D5B9671B2122FCB2006C2C09 /* UIViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D5B9671F2122FDF6006C2C09 /* UIViewController+Protocol.swift */,
+			);
+			path = UIViewController;
+			sourceTree = "<group>";
+		};
+		D5B9671C2122FCD8006C2C09 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				D5B9671D2122FCEF006C2C09 /* UIView+Protocol.swift */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
+		D5C420B41FED10F900483BA4 /* vendors */ = {
+			isa = PBXGroup;
+			children = (
+				D5C420B51FED10F900483BA4 /* 3 */,
+				D5C420B91FED10F900483BA4 /* 7 */,
+				D5C420BD1FED10F900483BA4 /* 8 */,
+			);
+			path = vendors;
+			sourceTree = "<group>";
+		};
+		D5C420B51FED10F900483BA4 /* 3 */ = {
+			isa = PBXGroup;
+			children = (
+				D5C420B61FED10F900483BA4 /* 3-logo-large.png */,
+				D5C420B71FED10F900483BA4 /* 3-logo-medium.png */,
+				D5C420B81FED10F900483BA4 /* 3-logo-mini.png */,
+			);
+			path = 3;
+			sourceTree = "<group>";
+		};
+		D5C420B91FED10F900483BA4 /* 7 */ = {
+			isa = PBXGroup;
+			children = (
+				D5C420BA1FED10F900483BA4 /* 7-logo-large.png */,
+				D5C420BB1FED10F900483BA4 /* 7-logo-medium.png */,
+				D5C420BC1FED10F900483BA4 /* 7-logo-mini.png */,
+			);
+			path = 7;
+			sourceTree = "<group>";
+		};
+		D5C420BD1FED10F900483BA4 /* 8 */ = {
+			isa = PBXGroup;
+			children = (
+				D5C420BE1FED10F900483BA4 /* 8-logo-large.png */,
+				D5C420BF1FED10F900483BA4 /* 8-logo-medium.png */,
+				D5C420C01FED10F900483BA4 /* 8-logo-mini.png */,
+			);
+			path = 8;
+			sourceTree = "<group>";
+		};
+		D5CE646A214BF7FD00D6A58B /* WSMemberGroup */ = {
+			isa = PBXGroup;
+			children = (
+				D5CE646C214BF81400D6A58B /* WSMemberGroupChat */,
+			);
+			path = WSMemberGroup;
+			sourceTree = "<group>";
+		};
+		D5CE646C214BF81400D6A58B /* WSMemberGroupChat */ = {
+			isa = PBXGroup;
+			children = (
+				D5CE646D214BF86600D6A58B /* WSMemberGroupChatView.swift */,
+			);
+			path = WSMemberGroupChat;
+			sourceTree = "<group>";
+		};
+		D5D241DB1FF40BE500E9DF3C /* WSSideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				D5D241DC1FF40C0F00E9DF3C /* WSSideMenuRootViewController.swift */,
+				D5D241E11FF5119A00E9DF3C /* WSSideMenuNavigationController.swift */,
+			);
+			path = WSSideMenu;
+			sourceTree = "<group>";
+		};
+		D5D241DE1FF4CC9F00E9DF3C /* WSMain */ = {
+			isa = PBXGroup;
+			children = (
+				D5CE646A214BF7FD00D6A58B /* WSMemberGroup */,
+				D58246D1214B94E300909B71 /* WSMemberWallLikeCommentPageController */,
+				D58B355F21456FD600BD70CB /* WSMemberWallComment */,
+				D58B355E21456FC700BD70CB /* WSMemberWallLike */,
+				D59C6A692142610C00790AED /* WSMemberWallPost */,
+				D551732C20C5512C005C0026 /* WSMemberWall */,
+				D59F3536212FE3F800CC6B58 /* WSMemberCompanyPageController */,
+				D5E8EF7120E0B73000409F70 /* WSMainView */,
+				D582E28A200612EA00F6FA5C /* WSMember */,
+				D521ED641FEBC25900ED187D /* WSCompany */,
+				D5E8EF6220E029AC00409F70 /* WSConversation */,
+				D54C3FE920BC0881003827BD /* WSMeetingRoom */,
+				D58357F5200A3520009ABCAD /* WSEvent */,
+			);
+			path = WSMain;
+			sourceTree = "<group>";
+		};
+		D5DEB76F20C48C7F0088A9B6 /* OpenType */ = {
+			isa = PBXGroup;
+			children = (
+				D5DEB77020C48C7F0088A9B6 /* FSMe-Bold.otf */,
+				D5DEB77120C48C7F0088A9B6 /* FSMe-BoldItalic.otf */,
+				D5DEB77220C48C7F0088A9B6 /* FSMe-Heavy.otf */,
+				D5DEB77320C48C7F0088A9B6 /* FSMe-HeavyItalic.otf */,
+				D5DEB77420C48C7F0088A9B6 /* FSMe-Italic.otf */,
+				D5DEB77520C48C7F0088A9B6 /* FSMe-Light.otf */,
+				D5DEB77620C48C7F0088A9B6 /* FSMe-LightItalic.otf */,
+				D5DEB77720C48C7F0088A9B6 /* FSMe-Regular.otf */,
+			);
+			path = OpenType;
+			sourceTree = "<group>";
+		};
+		D5E8EF6220E029AC00409F70 /* WSConversation */ = {
+			isa = PBXGroup;
+			children = (
+				D599DA4D214EF352006CC0FD /* WSGroupList */,
+				D5E8EF6420E029D800409F70 /* TBChatViewController.swift */,
+				D5E8EF6520E029D800409F70 /* MessageBubbleView.swift */,
+				D5E8EF6320E029D800409F70 /* MessageTableViewCell.swift */,
+			);
+			path = WSConversation;
+			sourceTree = "<group>";
+		};
+		D5E8EF6B20E0AF3800409F70 /* WSRoomList */ = {
+			isa = PBXGroup;
+			children = (
+				D54C3FEA20BC08A9003827BD /* WSMeetingRoomListView.swift */,
+				D54C3FEC20BC08C5003827BD /* WSMeetingRoomListProtocol.swift */,
+				D54C3FEE20BC1FA6003827BD /* WSMeetingRoomListPresenter.swift */,
+				D551733920C5851B005C0026 /* WSMeetingRoomListCell.swift */,
+				D551733B20C5852A005C0026 /* WSMeetingRoomListCell.xib */,
+			);
+			path = WSRoomList;
+			sourceTree = "<group>";
+		};
+		D5E8EF6C20E0AF4300409F70 /* WSRoomSlots */ = {
+			isa = PBXGroup;
+			children = (
+				D53F19FB20E124DA00A7462E /* WSMeetingRoomSlotsView.swift */,
+				D53F19FD20E124EF00A7462E /* WSMeetingRoomSlotsProtocol.swift */,
+				D53F19FF20E1250100A7462E /* WSMeetingRoomSlotsPresenter.swift */,
+				D53F1A0120E1251000A7462E /* WSMeetingRoomSlotsCell.swift */,
+				D53F1A0320E1252700A7462E /* WSMeetingRoomSlotsCell.xib */,
+			);
+			path = WSRoomSlots;
+			sourceTree = "<group>";
+		};
+		D5E8EF6D20E0AF5A00409F70 /* WSRoomHistory */ = {
+			isa = PBXGroup;
+			children = (
+				D53F1A0F20E21BCA00A7462E /* WSMeetingRoomHistoryView.swift */,
+				D53F1A1120E21BE300A7462E /* WSMeetingRoomHistoryProtocol.swift */,
+				D53F1A1320E21BF400A7462E /* WSMeetingRoomHistoryPresenter.swift */,
+				D53F1A1520E21C0400A7462E /* WSMeetingRoomHistoryCell.swift */,
+				D53F1A1720E21C2000A7462E /* WSMeetingRoomHistoryCell.xib */,
+			);
+			path = WSRoomHistory;
+			sourceTree = "<group>";
+		};
+		D5E8EF7020E0B6FD00409F70 /* WSEventList */ = {
+			isa = PBXGroup;
+			children = (
+				D58357F6200A3541009ABCAD /* WSEventListView.swift */,
+				D58357F8200A357A009ABCAD /* WSEventListProtocol.swift */,
+				D58357FA200A3590009ABCAD /* WSEventListPresenter.swift */,
+				D58357FC200A359F009ABCAD /* WSEventListCell.swift */,
+				D58357FE200A35B5009ABCAD /* WSEventListCell.xib */,
+			);
+			path = WSEventList;
+			sourceTree = "<group>";
+		};
+		D5E8EF7120E0B73000409F70 /* WSMainView */ = {
+			isa = PBXGroup;
+			children = (
+				D5D241DF1FF4CCFA00E9DF3C /* WSMainViewController.swift */,
+				D53F19EE20E0DC4000A7462E /* WSHomeViewController.swift */,
+				D5F70B442107458D009E9780 /* SWTabBar.swift */,
+				D5F70B452107458E009E9780 /* SWTabBarController.swift */,
+			);
+			path = WSMainView;
+			sourceTree = "<group>";
+		};
+		D5E8EF7220E0B78500409F70 /* WSMemberList */ = {
+			isa = PBXGroup;
+			children = (
+				D582E28B2006130900F6FA5C /* WSMemberListView.swift */,
+				D582E28D2006131900F6FA5C /* WSMemberListProtocol.swift */,
+				D582E28F2006132700F6FA5C /* WSMemberListPresenter.swift */,
+				D582E2912006133400F6FA5C /* WSMemberListCell.swift */,
+				D582E2932006134200F6FA5C /* WSMemberListCell.xib */,
+			);
+			path = WSMemberList;
+			sourceTree = "<group>";
+		};
+		D5E8EF7320E0B79F00409F70 /* WSCompanyList */ = {
+			isa = PBXGroup;
+			children = (
+				D521ED651FEBC2AA00ED187D /* WSCompanyListView.swift */,
+				D521ED671FEBC2C700ED187D /* WSCompanyListProtocol.swift */,
+				D521ED691FEBC2DF00ED187D /* WSCompanyListPresenter.swift */,
+				D521ED6B1FEBC2FB00ED187D /* WSCompanyListCell.swift */,
+				D5D241D71FF3D89F00E9DF3C /* WSCompanyListCell.xib */,
+			);
+			path = WSCompanyList;
+			sourceTree = "<group>";
+		};
+		D5EDF6B11FF7CE7900CDF37C /* WSWorkspaceSelection */ = {
+			isa = PBXGroup;
+			children = (
+				D5EDF6B21FF7CEA000CDF37C /* WSWorkspaceSelectionView.swift */,
+				D5EDF6B41FF7CEB300CDF37C /* WSWorkspaceSelectionPresenter.swift */,
+				D5EDF6B61FF7CEC600CDF37C /* WSWorkspaceSelectionProtocols.swift */,
+				D5EDF6B81FF7CF6B00CDF37C /* WSWorkspaceSelectionCell.swift */,
+				D5EACD9F1FFD80AD00F821E6 /* WSWorkspaceSelectionCell.xib */,
+			);
+			path = WSWorkspaceSelection;
+			sourceTree = "<group>";
+		};
+		D5F24FBC1FE8F97000FA4040 = {
+			isa = PBXGroup;
+			children = (
+				D5F24FC71FE8F97100FA4040 /* WreelySocial */,
+				D5F24FDC1FE8F97100FA4040 /* WreelySocialTests */,
+				D5F24FE71FE8F97100FA4040 /* WreelySocialUITests */,
+				D5F24FC61FE8F97100FA4040 /* Products */,
+				342B6DCEFE7899AC182305F4 /* Pods */,
+				E985BE1D3A149CBE4943E1FA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D5F24FC61FE8F97100FA4040 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D5F24FC51FE8F97100FA4040 /* WreelySocial.app */,
+				D5F24FD91FE8F97100FA4040 /* WreelySocialTests.xctest */,
+				D5F24FE41FE8F97100FA4040 /* WreelySocialUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D5F24FC71FE8F97100FA4040 /* WreelySocial */ = {
+			isa = PBXGroup;
+			children = (
+				D5E57EBF20F0E5030054481A /* WreelySocial.entitlements */,
+				D5599C0E212B720600374BCB /* WreelySocial-Bridging-Header.h */,
+				D5F250531FE915E800FA4040 /* Resources */,
+				D5F250281FE9151300FA4040 /* Classes */,
+				D5F24FCC1FE8F97100FA4040 /* Main.storyboard */,
+				D5F24FD41FE8F97100FA4040 /* Info.plist */,
+				D559402E1FF69D310004D124 /* GoogleService-Info.plist */,
+				D5EDF6AF1FF7051200CDF37C /* wreely-819a2-firebase-crashreporting-98g70-52356fa525.json */,
+				D5F24FD11FE8F97100FA4040 /* LaunchScreen.storyboard */,
+			);
+			path = WreelySocial;
+			sourceTree = "<group>";
+		};
+		D5F24FDC1FE8F97100FA4040 /* WreelySocialTests */ = {
+			isa = PBXGroup;
+			children = (
+				D5F24FDD1FE8F97100FA4040 /* WreelySocialTests.swift */,
+				D5F24FDF1FE8F97100FA4040 /* Info.plist */,
+			);
+			path = WreelySocialTests;
+			sourceTree = "<group>";
+		};
+		D5F24FE71FE8F97100FA4040 /* WreelySocialUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D5F24FE81FE8F97100FA4040 /* WreelySocialUITests.swift */,
+				D5F24FEA1FE8F97100FA4040 /* Info.plist */,
+			);
+			path = WreelySocialUITests;
+			sourceTree = "<group>";
+		};
+		D5F250281FE9151300FA4040 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				D5F2502A1FE9151300FA4040 /* Common */,
+				D51DD56C1FEA4968003A9C05 /* WSLibrary */,
+				D5F250291FE9151300FA4040 /* AppDelegate.swift */,
+				D5F250431FE9151300FA4040 /* ViewPresenter */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		D5F2502A1FE9151300FA4040 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				D546DE1021821D4300430003 /* ThirdParty */,
+				D573DC841FE95A2F00612E98 /* Protocols */,
+				D5F2502B1FE9151300FA4040 /* Extension */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		D5F2502B1FE9151300FA4040 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				D54C400720BC216E003827BD /* CollectionTypes */,
+				D54C3FF220BC216E003827BD /* OtherClasses */,
+				D54C3FFC20BC216E003827BD /* UIControls */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		D5F2502C1FE9151300FA4040 /* WSConnection */ = {
+			isa = PBXGroup;
+			children = (
+				D5AEBF451FF6E00F0098C841 /* RealtimeDatabase */,
+				D5F2502D1FE9151300FA4040 /* API */,
+				D5F250361FE9151300FA4040 /* DB */,
+				D5F250371FE9151300FA4040 /* WSRequest */,
+			);
+			path = WSConnection;
+			sourceTree = "<group>";
+		};
+		D5F2502D1FE9151300FA4040 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				D5F2502E1FE9151300FA4040 /* APIRequest */,
+				D5F250301FE9151300FA4040 /* Common */,
+				D5F250341FE9151300FA4040 /* WSAPIRequest.swift */,
+				D51AF84120CEFD03007C3A75 /* WSHTTPSessionManager.swift */,
+				D5F250351FE9151300FA4040 /* WSConnectionManager.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		D5F2502E1FE9151300FA4040 /* APIRequest */ = {
+			isa = PBXGroup;
+			children = (
+				D557785320DFE3DA00D10CDA /* WSAPIRequest+MeetingRooms.swift */,
+				D557785520DFE46600D10CDA /* WSAPIRequest+MemberWalls.swift */,
+				D5F2502F1FE9151300FA4040 /* WSAPIRequest+Users.swift */,
+				D5E8EF5C20E0193100409F70 /* WSAPIRequest+Companies.swift */,
+				D5CC1B052103152E004E8BCE /* WSAPIRequest+Events.swift */,
+				D5E8EF5E20E0193F00409F70 /* WSAPIRequest+Members.swift */,
+				D5B96723212309FD006C2C09 /* WSAPIRequest+Workspaces.swift */,
+			);
+			path = APIRequest;
+			sourceTree = "<group>";
+		};
+		D5F250301FE9151300FA4040 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				D5F250311FE9151300FA4040 /* WSAPIConstant.swift */,
+				D5F250321FE9151300FA4040 /* WSAPIRequestType.swift */,
+				D5F250331FE9151300FA4040 /* WSAPIStringUrl.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		D5F250361FE9151300FA4040 /* DB */ = {
+			isa = PBXGroup;
+			children = (
+				D5AEBF4C1FF6E4510098C841 /* DBRequest */,
+				D5AEBF481FF6E3E70098C841 /* WSDBRequest.swift */,
+				D5AEBF4A1FF6E4450098C841 /* WSDatabaseManager.swift */,
+			);
+			path = DB;
+			sourceTree = "<group>";
+		};
+		D5F250371FE9151300FA4040 /* WSRequest */ = {
+			isa = PBXGroup;
+			children = (
+				D582E27F2004F7D800F6FA5C /* WSRequest+Companies.swift */,
+				D5EBE159213D39130058B337 /* WSRequest+MemberWalls.swift */,
+				D5B96721212309E5006C2C09 /* WSRequest+Workspaces.swift */,
+				D5E8EF6020E0196700409F70 /* WSRequest+MeetingRoom.swift */,
+				D5F250381FE9151300FA4040 /* WSRequest+User.swift */,
+				D582E284200611FB00F6FA5C /* WSRequest+Vendors.swift */,
+				D582E2862006122A00F6FA5C /* WSRequest+Members.swift */,
+				D5CC1B03210314F5004E8BCE /* WSRequest+Events.swift */,
+				D5F250391FE9151300FA4040 /* WSRequest.swift */,
+			);
+			path = WSRequest;
+			sourceTree = "<group>";
+		};
+		D5F250401FE9151300FA4040 /* WSView */ = {
+			isa = PBXGroup;
+			children = (
+				D51DD5621FEA46D5003A9C05 /* WSViewController.swift */,
+				D569844921255EF70068FD85 /* WSTabBarController.swift */,
+				D569844B21255F130068FD85 /* WSTabBar.swift */,
+				D51DD5661FEA4728003A9C05 /* WSTableViewController.swift */,
+				D51DD56A1FEA484F003A9C05 /* WSTableViewCell.swift */,
+				D5D241D91FF3D9AA00E9DF3C /* WSCollectionViewCell.swift */,
+				D5C420CA1FED375100483BA4 /* WSCollectionViewController.swift */,
+				D57CD8F71FFE5A3D004452A0 /* WSNavigationController.swift */,
+				D57CD8F91FFE5AC6004452A0 /* WSImageView.swift */,
+				D5E8EF6E20E0B0AE00409F70 /* WSBasicViewController.swift */,
+				D5CC1B0721032190004E8BCE /* WSButton.swift */,
+			);
+			path = WSView;
+			sourceTree = "<group>";
+		};
+		D5F250431FE9151300FA4040 /* ViewPresenter */ = {
+			isa = PBXGroup;
+			children = (
+				D550C9562147A9C90005F17E /* WSProfile */,
+				D53F19F020E0EB8300A7462E /* WSSetting */,
+				D5EDF6B11FF7CE7900CDF37C /* WSWorkspaceSelection */,
+				D5D241DE1FF4CC9F00E9DF3C /* WSMain */,
+				D5D241DB1FF40BE500E9DF3C /* WSSideMenu */,
+				D5F2505B1FE9271F00FA4040 /* WSSplash */,
+				D58B8A0C20F38973008114E9 /* WSNormalLogin */,
+				D58B8A0B20F387B0008114E9 /* WSOTPLogin */,
+			);
+			path = ViewPresenter;
+			sourceTree = "<group>";
+		};
+		D5F250531FE915E800FA4040 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D551733D20C5B782005C0026 /* Files */,
+				D5F250541FE915E800FA4040 /* Fonts */,
+				D5F250551FE915E800FA4040 /* Images */,
+				D5F24FCF1FE8F97100FA4040 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D5F250541FE915E800FA4040 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				D5DEB76F20C48C7F0088A9B6 /* OpenType */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		D5F250551FE915E800FA4040 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				D53F1A0520E1270900A7462E /* icn_checkbox_selected_disabled@3x.png */,
+				D53F1A0720E1270A00A7462E /* icn_checkbox_selected_enabled@3x.png */,
+				D53F1A0620E1270900A7462E /* icn_checkbox_unselected_enabled@3x.png */,
+				D5C420B41FED10F900483BA4 /* vendors */,
+				D5F250561FE915E800FA4040 /* ic_wreely_splash@2x.png */,
+				D53F19F920E1238900A7462E /* settings_white@3x.png */,
+				D551733720C57F12005C0026 /* icn_more@2x.png */,
+				D5DEB76B20C4889D0088A9B6 /* icn_rectangle@2x.png */,
+				D5EACDA11FFD854E00F821E6 /* wreely_logo_circle_large@2x.png */,
+				D53F1A0D20E1838D00A7462E /* icn_logo_small@2x.png */,
+				D5EACDA21FFD855000F821E6 /* wreely_logo_circle_medium@2x.png */,
+				D5DEB76D20C48B970088A9B6 /* icn_left_arrow@2x.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		D5F2505A1FE9271F00FA4040 /* WSLogin */ = {
+			isa = PBXGroup;
+			children = (
+				D5F2505C1FE927DE00FA4040 /* WSLoginView.swift */,
+				D5F2505E1FE927F100FA4040 /* WSLoginPresenter.swift */,
+				D5F250601FE9280300FA4040 /* WSLoginProtocol.swift */,
+				D51DD5531FEA3494003A9C05 /* WSLoginCell.swift */,
+			);
+			path = WSLogin;
+			sourceTree = "<group>";
+		};
+		D5F2505B1FE9271F00FA4040 /* WSSplash */ = {
+			isa = PBXGroup;
+			children = (
+				D5F250451FE9151300FA4040 /* WSSplashView.swift */,
+				D5F250441FE9151300FA4040 /* WSSplashPresenter.swift */,
+				D5F250581FE91B6000FA4040 /* WSSplashProtocols.swift */,
+			);
+			path = WSSplash;
+			sourceTree = "<group>";
+		};
+		E985BE1D3A149CBE4943E1FA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6534304A383F333E131DFD49 /* Pods_WreelySocial.framework */,
+				0DEEEFA5C8BF14B00FD4B418 /* Pods_WreelySocialTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D5F24FC41FE8F97100FA4040 /* WreelySocial */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D5F24FED1FE8F97100FA4040 /* Build configuration list for PBXNativeTarget "WreelySocial" */;
+			buildPhases = (
+				D328060D96016DD59291D231 /* [CP] Check Pods Manifest.lock */,
+				D5F24FC11FE8F97100FA4040 /* Sources */,
+				D5F24FC21FE8F97100FA4040 /* Frameworks */,
+				D5F24FC31FE8F97100FA4040 /* Resources */,
+				8E8FBD6958C63A4E1DAA05FA /* [CP] Embed Pods Frameworks */,
+				D5EDF6AD1FF6FDF300CDF37C /* ShellScript */,
+				D5CCC33A223A7DC700E7940E /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WreelySocial;
+			productName = WreelySocial;
+			productReference = D5F24FC51FE8F97100FA4040 /* WreelySocial.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D5F24FD81FE8F97100FA4040 /* WreelySocialTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D5F24FF01FE8F97100FA4040 /* Build configuration list for PBXNativeTarget "WreelySocialTests" */;
+			buildPhases = (
+				7483387B3FFFBB1EA2B8B10D /* [CP] Check Pods Manifest.lock */,
+				D5F24FD51FE8F97100FA4040 /* Sources */,
+				D5F24FD61FE8F97100FA4040 /* Frameworks */,
+				D5F24FD71FE8F97100FA4040 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D5F24FDB1FE8F97100FA4040 /* PBXTargetDependency */,
+			);
+			name = WreelySocialTests;
+			productName = WreelySocialTests;
+			productReference = D5F24FD91FE8F97100FA4040 /* WreelySocialTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D5F24FE31FE8F97100FA4040 /* WreelySocialUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D5F24FF31FE8F97100FA4040 /* Build configuration list for PBXNativeTarget "WreelySocialUITests" */;
+			buildPhases = (
+				D5F24FE01FE8F97100FA4040 /* Sources */,
+				D5F24FE11FE8F97100FA4040 /* Frameworks */,
+				D5F24FE21FE8F97100FA4040 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D5F24FE61FE8F97100FA4040 /* PBXTargetDependency */,
+			);
+			name = WreelySocialUITests;
+			productName = WreelySocialUITests;
+			productReference = D5F24FE41FE8F97100FA4040 /* WreelySocialUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D5F24FBD1FE8F97000FA4040 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = WS;
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = Celerstudio;
+				TargetAttributes = {
+					D5F24FC41FE8F97100FA4040 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+					D5F24FD81FE8F97100FA4040 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D5F24FC41FE8F97100FA4040;
+					};
+					D5F24FE31FE8F97100FA4040 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D5F24FC41FE8F97100FA4040;
+					};
+				};
+			};
+			buildConfigurationList = D5F24FC01FE8F97000FA4040 /* Build configuration list for PBXProject "WreelySocial" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D5F24FBC1FE8F97000FA4040;
+			productRefGroup = D5F24FC61FE8F97100FA4040 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D5F24FC41FE8F97100FA4040 /* WreelySocial */,
+				D5F24FD81FE8F97100FA4040 /* WreelySocialTests */,
+				D5F24FE31FE8F97100FA4040 /* WreelySocialUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D5F24FC31FE8F97100FA4040 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5A6039E212E02C9004224F5 /* silver.json in Resources */,
+				D5F24FD31FE8F97100FA4040 /* LaunchScreen.storyboard in Resources */,
+				D5DEB77C20C48C840088A9B6 /* FSMe-Italic.otf in Resources */,
+				D5C420C51FED10FA00483BA4 /* 7-logo-medium.png in Resources */,
+				D53F1A0820E1270A00A7462E /* icn_checkbox_selected_disabled@3x.png in Resources */,
+				D58357FF200A35B5009ABCAD /* WSEventListCell.xib in Resources */,
+				D5835822200CAD20009ABCAD /* WSEventDetailCell.xib in Resources */,
+				D5C420C41FED10FA00483BA4 /* 7-logo-large.png in Resources */,
+				D5835817200CAA9E009ABCAD /* WSMemberDetailCell.xib in Resources */,
+				D551734020C5B782005C0026 /* all_posts.json in Resources */,
+				D5C420C61FED10FA00483BA4 /* 7-logo-mini.png in Resources */,
+				D5F250571FE915E800FA4040 /* ic_wreely_splash@2x.png in Resources */,
+				D5DEB77D20C48C840088A9B6 /* FSMe-Light.otf in Resources */,
+				D5C420C21FED10FA00483BA4 /* 3-logo-medium.png in Resources */,
+				D5DEB77820C48C840088A9B6 /* FSMe-Bold.otf in Resources */,
+				D551733820C57F14005C0026 /* icn_more@2x.png in Resources */,
+				D53F1A1820E21C2000A7462E /* WSMeetingRoomHistoryCell.xib in Resources */,
+				D53F1A0420E1252700A7462E /* WSMeetingRoomSlotsCell.xib in Resources */,
+				D551734120C5B782005C0026 /* single_post.json in Resources */,
+				D551733420C57467005C0026 /* WSMemberWallCell.xib in Resources */,
+				D53F1A0E20E1838E00A7462E /* icn_logo_small@2x.png in Resources */,
+				D5F24FD01FE8F97100FA4040 /* Assets.xcassets in Resources */,
+				D5EACDA41FFD855100F821E6 /* wreely_logo_circle_medium@2x.png in Resources */,
+				D5EDF6B01FF7051200CDF37C /* wreely-819a2-firebase-crashreporting-98g70-52356fa525.json in Resources */,
+				D5EACDA31FFD855100F821E6 /* wreely_logo_circle_large@2x.png in Resources */,
+				D5C420C31FED10FA00483BA4 /* 3-logo-mini.png in Resources */,
+				D559402F1FF69D310004D124 /* GoogleService-Info.plist in Resources */,
+				D5DEB77A20C48C840088A9B6 /* FSMe-Heavy.otf in Resources */,
+				D551733C20C5852A005C0026 /* WSMeetingRoomListCell.xib in Resources */,
+				D5DEB77F20C48C840088A9B6 /* FSMe-Regular.otf in Resources */,
+				D53F19FA20E1238900A7462E /* settings_white@3x.png in Resources */,
+				D583580C200CA59A009ABCAD /* WSCompanyDetailCell.xib in Resources */,
+				D5DEB76C20C4889F0088A9B6 /* icn_rectangle@2x.png in Resources */,
+				D582E2942006134200F6FA5C /* WSMemberListCell.xib in Resources */,
+				D5DEB77B20C48C840088A9B6 /* FSMe-HeavyItalic.otf in Resources */,
+				D5DEB76E20C48B980088A9B6 /* icn_left_arrow@2x.png in Resources */,
+				D5C420C71FED10FA00483BA4 /* 8-logo-large.png in Resources */,
+				D5DEB77E20C48C840088A9B6 /* FSMe-LightItalic.otf in Resources */,
+				D5A6039C212DF6B9004224F5 /* dark.json in Resources */,
+				D53F1A0920E1270A00A7462E /* icn_checkbox_unselected_enabled@3x.png in Resources */,
+				D53F1A0A20E1270B00A7462E /* icn_checkbox_selected_enabled@3x.png in Resources */,
+				D5C420C11FED10FA00483BA4 /* 3-logo-large.png in Resources */,
+				D53F19F520E0EBAE00A7462E /* all_apps.json in Resources */,
+				D5C420C81FED10FA00483BA4 /* 8-logo-medium.png in Resources */,
+				D5C420C91FED10FA00483BA4 /* 8-logo-mini.png in Resources */,
+				D5D241D81FF3D89F00E9DF3C /* WSCompanyListCell.xib in Resources */,
+				D5DEB77920C48C840088A9B6 /* FSMe-BoldItalic.otf in Resources */,
+				D5EACDA01FFD80AD00F821E6 /* WSWorkspaceSelectionCell.xib in Resources */,
+				D5F24FCE1FE8F97100FA4040 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5F24FD71FE8F97100FA4040 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5F24FE21FE8F97100FA4040 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7483387B3FFFBB1EA2B8B10D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WreelySocialTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8E8FBD6958C63A4E1DAA05FA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WreelySocial/Pods-WreelySocial-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL-GRPC/openssl_grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/Cache/Cache.framework",
+				"${BUILT_PRODUCTS_DIR}/Cloudinary/Cloudinary.framework",
+				"${BUILT_PRODUCTS_DIR}/DateToolsSwift/DateToolsSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/DynamicBlurView/DynamicBlurView.framework",
+				"${BUILT_PRODUCTS_DIR}/FontAwesome.swift/FontAwesome_swift.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/GrowingTextView/GrowingTextView.framework",
+				"${BUILT_PRODUCTS_DIR}/Imaginary/Imaginary.framework",
+				"${BUILT_PRODUCTS_DIR}/InteractiveSideMenu/InteractiveSideMenu.framework",
+				"${BUILT_PRODUCTS_DIR}/KMPlaceholderTextView/KMPlaceholderTextView.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/Letters/Letters.framework",
+				"${BUILT_PRODUCTS_DIR}/Lightbox/Lightbox.framework",
+				"${BUILT_PRODUCTS_DIR}/LocationPickerViewController/LocationPickerViewController.framework",
+				"${BUILT_PRODUCTS_DIR}/Log/Log.framework",
+				"${BUILT_PRODUCTS_DIR}/Material/Material.framework",
+				"${BUILT_PRODUCTS_DIR}/Mixpanel-swift/Mixpanel.framework",
+				"${BUILT_PRODUCTS_DIR}/Motion/Motion.framework",
+				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/OnlyPictures/OnlyPictures.framework",
+				"${BUILT_PRODUCTS_DIR}/ParallaxHeader/ParallaxHeader.framework",
+				"${BUILT_PRODUCTS_DIR}/PopupDialog/PopupDialog.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/PryntTrimmerView/PryntTrimmerView.framework",
+				"${BUILT_PRODUCTS_DIR}/ReachabilitySwift/Reachability.framework",
+				"${BUILT_PRODUCTS_DIR}/SCLAlertView/SCLAlertView.framework",
+				"${BUILT_PRODUCTS_DIR}/ScrollableDatepicker/ScrollableDatepicker.framework",
+				"${BUILT_PRODUCTS_DIR}/SteviaLayout/Stevia.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftLocation/SwiftLocation.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyUserDefaults/SwiftyUserDefaults.framework",
+				"${BUILT_PRODUCTS_DIR}/Toast-Swift/Toast_Swift.framework",
+				"${PODS_ROOT}/UserExperior/UserExperior.framework",
+				"${BUILT_PRODUCTS_DIR}/YPImagePicker/YPImagePicker.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl_grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cache.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cloudinary.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DateToolsSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DynamicBlurView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FontAwesome_swift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GrowingTextView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Imaginary.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/InteractiveSideMenu.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KMPlaceholderTextView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Letters.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lightbox.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LocationPickerViewController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Log.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Material.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Mixpanel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Motion.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OnlyPictures.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ParallaxHeader.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PopupDialog.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PryntTrimmerView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SCLAlertView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ScrollableDatepicker.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Stevia.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftLocation.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyUserDefaults.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Toast_Swift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UserExperior.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YPImagePicker.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WreelySocial/Pods-WreelySocial-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D328060D96016DD59291D231 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WreelySocial-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D5EDF6AD1FF6FDF300CDF37C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" e50ba22faa93a6114e5977a2daee28eb787a15b8 12fcca6ef52c7e25f5ed38468ca26375f51a6b36c55d3d8c7122c18268535675";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D5F24FC11FE8F97100FA4040 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D59C6A712142619500790AED /* WSMemberWallPostCell.swift in Sources */,
+				D5F70B472107458E009E9780 /* SWTabBarController.swift in Sources */,
+				D521ED6A1FEBC2DF00ED187D /* WSCompanyListPresenter.swift in Sources */,
+				D54C400B20BC216E003827BD /* Bundle+Extension.swift in Sources */,
+				D5C420CB1FED375100483BA4 /* WSCollectionViewController.swift in Sources */,
+				D54C400F20BC216E003827BD /* String+Extension.swift in Sources */,
+				D53F1A1420E21BF400A7462E /* WSMeetingRoomHistoryPresenter.swift in Sources */,
+				D53F19F620E0EBAE00A7462E /* TBCommonSettingProtocols.swift in Sources */,
+				D5B967052122EF80006C2C09 /* WSWorkspace.swift in Sources */,
+				D5309EB221C9297B009D0BF7 /* UIWindow+Extension.swift in Sources */,
+				D582E2892006125D00F6FA5C /* WSFirebaseRequest+Members.swift in Sources */,
+				D5EBE158213D35CB0058B337 /* WSMemberWallComments.swift in Sources */,
+				D54C401720BC216E003827BD /* UIImageView+Extension.swift in Sources */,
+				D569844C21255F130068FD85 /* WSTabBar.swift in Sources */,
+				D54ADDF9210212F100000E11 /* WSEvent.swift in Sources */,
+				D58B8A1E20F38A9A008114E9 /* WSOTPConfirmationCell.swift in Sources */,
+				D5D241DD1FF40C1000E9DF3C /* WSSideMenuRootViewController.swift in Sources */,
+				D5F70B462107458E009E9780 /* SWTabBar.swift in Sources */,
+				D5AEBF471FF6E03F0098C841 /* WSFirebaseManager.swift in Sources */,
+				D51AF84420CEFFC7007C3A75 /* WSMemberWall.swift in Sources */,
+				D5E8EF6A20E02B2700409F70 /* WSFIRMessages.swift in Sources */,
+				D583580F200CAA61009ABCAD /* WSMemberDetailView.swift in Sources */,
+				D5CC1B0821032190004E8BCE /* WSButton.swift in Sources */,
+				D54C3FF120BC20F3003827BD /* WSTracking.swift in Sources */,
+				D59C932421467FA300B62BA5 /* WSMemberWallLikePresenter.swift in Sources */,
+				D5B967202122FDF6006C2C09 /* UIViewController+Protocol.swift in Sources */,
+				D54849F01FEAA441004AA46C /* WSForgotPasswordProtocol.swift in Sources */,
+				D54C402E20BC890C003827BD /* WSCompany.swift in Sources */,
+				D599DA55214EF888006CC0FD /* WSGroupListProtocol.swift in Sources */,
+				D57CD8F81FFE5A3D004452A0 /* WSNavigationController.swift in Sources */,
+				D54C401320BC216E003827BD /* UserDefault+Extension.swift in Sources */,
+				D5CC1B04210314F5004E8BCE /* WSRequest+Events.swift in Sources */,
+				D54C403020BC8953003827BD /* WSMeetingRoom.swift in Sources */,
+				D58357FB200A3590009ABCAD /* WSEventListPresenter.swift in Sources */,
+				D551732E20C5515A005C0026 /* WSMemberWallView.swift in Sources */,
+				D56C71C3214A936B00F1AEC5 /* WSMemberWallCommentProtocol.swift in Sources */,
+				D5E8EF5F20E0194000409F70 /* WSAPIRequest+Members.swift in Sources */,
+				D5E8EF6820E029D800409F70 /* MessageBubbleView.swift in Sources */,
+				D51DD5631FEA46D5003A9C05 /* WSViewController.swift in Sources */,
+				D57CD8FE1FFE6192004452A0 /* WSFirebaseRequest+Users.swift in Sources */,
+				D5CC1B062103152E004E8BCE /* WSAPIRequest+Events.swift in Sources */,
+				D56C71C7214A939300F1AEC5 /* WSMemberWallCommentCell.swift in Sources */,
+				D58B8A1420F38A36008114E9 /* WSOTPProtocol.swift in Sources */,
+				D54C400C20BC216E003827BD /* Data+Extension.swift in Sources */,
+				D551733220C5517E005C0026 /* WSMemberWallPresenter.swift in Sources */,
+				D557785620DFE46600D10CDA /* WSAPIRequest+MemberWalls.swift in Sources */,
+				D551733620C577EF005C0026 /* WSMemberWallCell.swift in Sources */,
+				D51AF84220CEFD03007C3A75 /* WSHTTPSessionManager.swift in Sources */,
+				D5E8EF6120E0196700409F70 /* WSRequest+MeetingRoom.swift in Sources */,
+				D57CD8FC1FFE6063004452A0 /* WSFirebaseRequest.swift in Sources */,
+				D5EBE156213D35AA0058B337 /* WSMemberWallLikes.swift in Sources */,
+				D582E28C2006130900F6FA5C /* WSMemberListView.swift in Sources */,
+				D5835813200CAA84009ABCAD /* WSMemberDetailPresenter.swift in Sources */,
+				D51DD5521FEA1B5F003A9C05 /* Routable.swift in Sources */,
+				D5CE646E214BF86600D6A58B /* WSMemberGroupChatView.swift in Sources */,
+				D54C402620BC875D003827BD /* WSTheme.swift in Sources */,
+				D5E8EF5D20E0193100409F70 /* WSAPIRequest+Companies.swift in Sources */,
+				D54C3FEB20BC08A9003827BD /* WSMeetingRoomListView.swift in Sources */,
+				D58B8A1220F38A25008114E9 /* WSOTPPresenter.swift in Sources */,
+				D5F250591FE91B6000FA4040 /* WSSplashProtocols.swift in Sources */,
+				D51DD5611FEA45DA003A9C05 /* Storyboard+Protocol.swift in Sources */,
+				D5774091216A1C0A002727D0 /* WSMeetingRoomDashboard.swift in Sources */,
+				D54C401C20BC216E003827BD /* UIView+Extension.swift in Sources */,
+				D54C401520BC216E003827BD /* UIButton+Extension.swift in Sources */,
+				D54C3FED20BC08C5003827BD /* WSMeetingRoomListProtocol.swift in Sources */,
+				D5F250611FE9280300FA4040 /* WSLoginProtocol.swift in Sources */,
+				D58357FD200A359F009ABCAD /* WSEventListCell.swift in Sources */,
+				D54C401F20BC216E003827BD /* Dictionary+Extension.swift in Sources */,
+				D5AEBF491FF6E3E70098C841 /* WSDBRequest.swift in Sources */,
+				D5835806200CA568009ABCAD /* WSCompanyDetailProtocol.swift in Sources */,
+				D5B9671E2122FCEF006C2C09 /* UIView+Protocol.swift in Sources */,
+				D5EDF6B91FF7CF6B00CDF37C /* WSWorkspaceSelectionCell.swift in Sources */,
+				D53F19F820E0EBAE00A7462E /* TBCommonSettingPresenter.swift in Sources */,
+				D56C71C1214A935800F1AEC5 /* WSMemberWallCommentView.swift in Sources */,
+				D56C71C5214A938200F1AEC5 /* WSMemberWallCommentPresenter.swift in Sources */,
+				D564621320FCF282000E7A9E /* WSVendor.swift in Sources */,
+				D5AEBF4F1FF6E4AB0098C841 /* WSDBRequest+Users.swift in Sources */,
+				D5D241E01FF4CCFA00E9DF3C /* WSMainViewController.swift in Sources */,
+				D599DA4F214EF400006CC0FD /* WSGroupListView.swift in Sources */,
+				D5F2505D1FE927DE00FA4040 /* WSLoginView.swift in Sources */,
+				D5F250491FE9151300FA4040 /* WSAPIRequestType.swift in Sources */,
+				D583580A200CA582009ABCAD /* WSCompanyDetailCell.swift in Sources */,
+				D54C402420BC875D003827BD /* WSError.swift in Sources */,
+				D58D45CD21491B49009FD825 /* WSProfileWallProtocol.swift in Sources */,
+				D58B8A1C20F38A8B008114E9 /* WSOTPConfirmationProtocol.swift in Sources */,
+				D5309EB121C9297B009D0BF7 /* UIImage+Extension.swift in Sources */,
+				D5F250461FE9151300FA4040 /* AppDelegate.swift in Sources */,
+				D5EBE15A213D39130058B337 /* WSRequest+MemberWalls.swift in Sources */,
+				D54C3FEF20BC1FA6003827BD /* WSMeetingRoomListPresenter.swift in Sources */,
+				D521ED661FEBC2AA00ED187D /* WSCompanyListView.swift in Sources */,
+				D51AF85020CF0AF9007C3A75 /* WSFirebaseSession.swift in Sources */,
+				D5D241E21FF5119A00E9DF3C /* WSSideMenuNavigationController.swift in Sources */,
+				D50BF3A620037EB500BD8C87 /* WSFIRVendor.swift in Sources */,
+				D59F353A212FE43A00CC6B58 /* WSMemberCompanyPageController.swift in Sources */,
+				D551733A20C5851B005C0026 /* WSMeetingRoomListCell.swift in Sources */,
+				D5835811200CAA70009ABCAD /* WSMemberDetailProtocol.swift in Sources */,
+				D54C401020BC216E003827BD /* UIColor+Extension.swift in Sources */,
+				D54C402520BC875D003827BD /* WSLogger.swift in Sources */,
+				D53F19FE20E124EF00A7462E /* WSMeetingRoomSlotsProtocol.swift in Sources */,
+				D53F1A0220E1251000A7462E /* WSMeetingRoomSlotsCell.swift in Sources */,
+				D50BF3AF20040F8D00BD8C87 /* WSSession.swift in Sources */,
+				D54C401420BC216E003827BD /* UIAlertController+Extension.swift in Sources */,
+				D5B96724212309FD006C2C09 /* WSAPIRequest+Workspaces.swift in Sources */,
+				D53F19EF20E0DC4000A7462E /* WSHomeViewController.swift in Sources */,
+				D582E2902006132700F6FA5C /* WSMemberListPresenter.swift in Sources */,
+				D58246D3214B952D00909B71 /* WSMemberWallLikeCommentPageController.swift in Sources */,
+				D5D241DA1FF3D9AA00E9DF3C /* WSCollectionViewCell.swift in Sources */,
+				D54849EE1FEAA430004AA46C /* WSForgotPasswordPresenter.swift in Sources */,
+				D53F19FC20E124DA00A7462E /* WSMeetingRoomSlotsView.swift in Sources */,
+				D58357F9200A357A009ABCAD /* WSEventListProtocol.swift in Sources */,
+				D59C6A6D2142614E00790AED /* WSMemberWallPostProtocol.swift in Sources */,
+				D5F2504B1FE9151300FA4040 /* WSAPIRequest.swift in Sources */,
+				D59C932021467F5200B62BA5 /* WSMemberWallLikeView.swift in Sources */,
+				D5CC1B0A21034618004E8BCE /* UITableView+Extension.swift in Sources */,
+				D51DD5671FEA4728003A9C05 /* WSTableViewController.swift in Sources */,
+				D54C401A20BC216E003827BD /* UITableViewCell+Extension.swift in Sources */,
+				D5835820200CAD13009ABCAD /* WSEventDetailCell.swift in Sources */,
+				D582E2822004F82500F6FA5C /* WSFirebaseRequest+Companies.swift in Sources */,
+				D54C401120BC216E003827BD /* UIFont+Extension.swift in Sources */,
+				D51DD5541FEA3494003A9C05 /* WSLoginCell.swift in Sources */,
+				D521ED681FEBC2C700ED187D /* WSCompanyListProtocol.swift in Sources */,
+				D53F1A0020E1250100A7462E /* WSMeetingRoomSlotsPresenter.swift in Sources */,
+				D54C400E20BC216E003827BD /* Int+Extension.swift in Sources */,
+				D582E2872006122A00F6FA5C /* WSRequest+Members.swift in Sources */,
+				D53F1A1A20E2289600A7462E /* WSMeetingRoomHistory.swift in Sources */,
+				D5F2504C1FE9151300FA4040 /* WSConnectionManager.swift in Sources */,
+				D5F2504E1FE9151300FA4040 /* WSRequest.swift in Sources */,
+				D599DA51214EF427006CC0FD /* WSGroupListCell.swift in Sources */,
+				D582E285200611FB00F6FA5C /* WSRequest+Vendors.swift in Sources */,
+				D54C401E20BC216E003827BD /* Array+Extension.swift in Sources */,
+				D583581E200CAD06009ABCAD /* WSEventDetailPresenter.swift in Sources */,
+				D58B8A1020F38A13008114E9 /* WSOTPView.swift in Sources */,
+				D52FA017210B031300A61281 /* WSSettingViewController.swift in Sources */,
+				D59C932221467F9300B62BA5 /* WSMemberWallLikeProtocol.swift in Sources */,
+				D557785420DFE3DA00D10CDA /* WSAPIRequest+MeetingRooms.swift in Sources */,
+				D582E28E2006131900F6FA5C /* WSMemberListProtocol.swift in Sources */,
+				D5EDF6B31FF7CEA000CDF37C /* WSWorkspaceSelectionView.swift in Sources */,
+				D54C403220BC8992003827BD /* WSMeetingRoomBookings.swift in Sources */,
+				D54C402020BC216E003827BD /* Error+Extension.swift in Sources */,
+				D5835804200CA554009ABCAD /* WSCompanyDetailView.swift in Sources */,
+				D5835815200CAA90009ABCAD /* WSMemberDetailCell.swift in Sources */,
+				D59C932621467FB400B62BA5 /* WSMemberWallLikeCell.swift in Sources */,
+				D53F1A1020E21BCB00A7462E /* WSMeetingRoomHistoryView.swift in Sources */,
+				D5835801200A3B95009ABCAD /* WSFIREvent.swift in Sources */,
+				D551733020C5516F005C0026 /* WSMemberWallProtocol.swift in Sources */,
+				D54C401820BC216E003827BD /* UINavigationController+Extension.swift in Sources */,
+				D50BF3A82003826000BD8C87 /* WSFIRUser.swift in Sources */,
+				D53F1A1620E21C0400A7462E /* WSMeetingRoomHistoryCell.swift in Sources */,
+				D583581A200CACEC009ABCAD /* WSEventDetailView.swift in Sources */,
+				D59C6A6B2142613A00790AED /* WSMemberWallPostView.swift in Sources */,
+				D54849F21FEAA450004AA46C /* WSForgotPasswordCell.swift in Sources */,
+				D53F19F720E0EBAE00A7462E /* TBCommonSettingView.swift in Sources */,
+				D5F2504D1FE9151300FA4040 /* WSRequest+User.swift in Sources */,
+				D5B96722212309E5006C2C09 /* WSRequest+Workspaces.swift in Sources */,
+				D50BF3AA2003826E00BD8C87 /* WSFIRCompany.swift in Sources */,
+				D54C402820BC877B003827BD /* WSFunctional.swift in Sources */,
+				D54C401D20BC216E003827BD /* UIViewController+Extension.swift in Sources */,
+				D58D45D121491BA4009FD825 /* WSProfileWallCell.swift in Sources */,
+				D58357F7200A3541009ABCAD /* WSEventListView.swift in Sources */,
+				D5E8EF6620E029D800409F70 /* MessageTableViewCell.swift in Sources */,
+				D58B8A1A20F38A72008114E9 /* WSOTPConfirmationPresenter.swift in Sources */,
+				D54C401620BC216E003827BD /* UIDevice+Extension.swift in Sources */,
+				D5F2504A1FE9151300FA4040 /* WSAPIStringUrl.swift in Sources */,
+				D582E2802004F7D900F6FA5C /* WSRequest+Companies.swift in Sources */,
+				D5AEBF4B1FF6E4450098C841 /* WSDatabaseManager.swift in Sources */,
+				D58D45CF21491B6D009FD825 /* WSProfileWallPresenter.swift in Sources */,
+				D53F1A1220E21BE300A7462E /* WSMeetingRoomHistoryProtocol.swift in Sources */,
+				D51DD56B1FEA484F003A9C05 /* WSTableViewCell.swift in Sources */,
+				D5835808200CA576009ABCAD /* WSCompanyDetailPresenter.swift in Sources */,
+				D5F250521FE9151300FA4040 /* WSSplashView.swift in Sources */,
+				D569844A21255EF70068FD85 /* WSTabBarController.swift in Sources */,
+				D5F2504F1FE9151300FA4040 /* WSConstant.swift in Sources */,
+				D57CD8FA1FFE5AC6004452A0 /* WSImageView.swift in Sources */,
+				D54C400D20BC216E003827BD /* Date+Extension.swift in Sources */,
+				D5E8EF6720E029D800409F70 /* TBChatViewController.swift in Sources */,
+				D5EDF6B71FF7CEC600CDF37C /* WSWorkspaceSelectionProtocols.swift in Sources */,
+				D51AF84E20CF09D7007C3A75 /* WSUser.swift in Sources */,
+				D5E8EF6F20E0B0AE00409F70 /* WSBasicViewController.swift in Sources */,
+				D59C6A6F2142615E00790AED /* WSMemberWallPostPresenter.swift in Sources */,
+				D54C402C20BC88CC003827BD /* WSMember.swift in Sources */,
+				D599DA53214EF875006CC0FD /* WSGroupListPresenter.swift in Sources */,
+				D58B8A1820F38A5D008114E9 /* WSOTPConfirmationView.swift in Sources */,
+				D54849EC1FEAA41A004AA46C /* WSForgotPasswordView.swift in Sources */,
+				D58B8A1620F38A46008114E9 /* WSOTPCell.swift in Sources */,
+				D5F2505F1FE927F100FA4040 /* WSLoginPresenter.swift in Sources */,
+				D5F250471FE9151300FA4040 /* WSAPIRequest+Users.swift in Sources */,
+				D54C401920BC216E003827BD /* UIStoryboard+Extension.swift in Sources */,
+				D583581C200CACFA009ABCAD /* WSEventDetailProtocol.swift in Sources */,
+				D53F1A0C20E12A9500A7462E /* WSMeetingRoomSlot.swift in Sources */,
+				D582E2922006133400F6FA5C /* WSMemberListCell.swift in Sources */,
+				D5815FED2147D26F007F3C6C /* WSProfileWallView.swift in Sources */,
+				D50BF3AC2003AA4C00BD8C87 /* WSFirebaseRequest+Vendors.swift in Sources */,
+				D521ED6C1FEBC2FB00ED187D /* WSCompanyListCell.swift in Sources */,
+				D54C401220BC216E003827BD /* UInt+Extension.swift in Sources */,
+				D54C401B20BC216E003827BD /* UITableViewController+Extension.swift in Sources */,
+				D5F250481FE9151300FA4040 /* WSAPIConstant.swift in Sources */,
+				D5EDF6B51FF7CEB300CDF37C /* WSWorkspaceSelectionPresenter.swift in Sources */,
+				D5F250511FE9151300FA4040 /* WSSplashPresenter.swift in Sources */,
+				D51DD55F1FEA45A3003A9C05 /* TableViewCell+Protocol.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5F24FD51FE8F97100FA4040 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5F24FDE1FE8F97100FA4040 /* WreelySocialTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5F24FE01FE8F97100FA4040 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5F24FE91FE8F97100FA4040 /* WreelySocialUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D5F24FDB1FE8F97100FA4040 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D5F24FC41FE8F97100FA4040 /* WreelySocial */;
+			targetProxy = D5F24FDA1FE8F97100FA4040 /* PBXContainerItemProxy */;
+		};
+		D5F24FE61FE8F97100FA4040 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D5F24FC41FE8F97100FA4040 /* WreelySocial */;
+			targetProxy = D5F24FE51FE8F97100FA4040 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D5F24FCC1FE8F97100FA4040 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D5F24FCD1FE8F97100FA4040 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D5F24FD11FE8F97100FA4040 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D5F24FD21FE8F97100FA4040 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D51AF84520CF0191007C3A75 /* Debug Beta */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = "Debug Beta";
+		};
+		D51AF84620CF0191007C3A75 /* Debug Beta */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38F3BBD53CA4F360C8215148 /* Pods-WreelySocial.debug beta.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = WorkloftAppIcon;
+				CODE_SIGN_ENTITLEMENTS = WreelySocial/WreelySocial.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 495XWEJ924;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WreelySocial/Classes/Common/ThirdParty/Appsee",
+					"$(PROJECT_DIR)/WreelySocial/Classes/Common/ThirdParty/UXCam",
+					"$(PROJECT_DIR)/WreelySocial/Classes/Common/ThirdParty/UserExperior",
+					"/Users/tirupatibalan/Documents/repository/bitbucket/userexperior/userexperior-swift/UserExperior/iOS",
+				);
+				INFOPLIST_FILE = WreelySocial/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				"OTHER_SWIFT_FLAGS[arch=*]" = "$(inherited) \"-D\" \"BETA\"";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wreely.workloft;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "WreelySocial/WreelySocial-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = "Debug Beta";
+		};
+		D51AF84720CF0191007C3A75 /* Debug Beta */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35763C9928CDFE75B0649680 /* Pods-WreelySocialTests.debug beta.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 495XWEJ924;
+				INFOPLIST_FILE = WreelySocialTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.celerstudio.WreelySocialTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WreelySocial.app/WreelySocial";
+			};
+			name = "Debug Beta";
+		};
+		D51AF84820CF0191007C3A75 /* Debug Beta */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 495XWEJ924;
+				INFOPLIST_FILE = WreelySocialUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.celerstudio.WreelySocialUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WreelySocial;
+			};
+			name = "Debug Beta";
+		};
+		D51AF84920CF01A1007C3A75 /* Release Beta */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "Release Beta";
+		};
+		D51AF84A20CF01A1007C3A75 /* Release Beta */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4EEAD396537CF0447301172F /* Pods-WreelySocial.release beta.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = WorkloftAppIcon;
+				CODE_SIGN_ENTITLEMENTS = WreelySocial/WreelySocial.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 495XWEJ924;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WreelySocial/Classes/Common/ThirdParty/Appsee",
+					"$(PROJECT_DIR)/WreelySocial/Classes/Common/ThirdParty/UXCam",
+					"$(PROJECT_DIR)/WreelySocial/Classes/Common/ThirdParty/UserExperior",
+					"/Users/tirupatibalan/Documents/repository/bitbucket/userexperior/userexperior-swift/UserExperior/iOS",
+				);
+				INFOPLIST_FILE = WreelySocial/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				"OTHER_SWIFT_FLAGS[arch=*]" = "$(inherited) \"-D\" \"BETA\"";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wreely.workloft;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "WreelySocial/WreelySocial-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = "Release Beta";
+		};
+		D51AF84B20CF01A1007C3A75 /* Release Beta */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 632CD12B2200979CCBCBE41A /* Pods-WreelySocialTests.release beta.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 495XWEJ924;
+				INFOPLIST_FILE = WreelySocialTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.celerstudio.WreelySocialTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WreelySocial.app/WreelySocial";
+			};
+			name = "Release Beta";
+		};
+		D51AF84C20CF01A1007C3A75 /* Release Beta */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 495XWEJ924;
+				INFOPLIST_FILE = WreelySocialUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.celerstudio.WreelySocialUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WreelySocial;
+			};
+			name = "Release Beta";
+		};
+		D5F24FEB1FE8F97100FA4040 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D5F24FEC1FE8F97100FA4040 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D5F24FEE1FE8F97100FA4040 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82B53ACEB957C0E787C22B84 /* Pods-WreelySocial.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = WorkloftAppIcon;
+				CODE_SIGN_ENTITLEMENTS = WreelySocial/WreelySocial.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 495XWEJ924;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WreelySocial/Classes/Common/ThirdParty/Appsee",
+					"$(PROJECT_DIR)/WreelySocial/Classes/Common/ThirdParty/UXCam",
+					"$(PROJECT_DIR)/WreelySocial/Classes/Common/ThirdParty/UserExperior",
+					"/Users/tirupatibalan/Documents/repository/bitbucket/userexperior/userexperior-swift/UserExperior/iOS",
+				);
+				INFOPLIST_FILE = WreelySocial/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wreely.workloft;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "WreelySocial/WreelySocial-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		D5F24FEF1FE8F97100FA4040 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59932F1A5A213BD2F9BF3F20 /* Pods-WreelySocial.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = WorkloftAppIcon;
+				CODE_SIGN_ENTITLEMENTS = WreelySocial/WreelySocial.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 495XWEJ924;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WreelySocial/Classes/Common/ThirdParty/Appsee",
+					"$(PROJECT_DIR)/WreelySocial/Classes/Common/ThirdParty/UXCam",
+					"$(PROJECT_DIR)/WreelySocial/Classes/Common/ThirdParty/UserExperior",
+					"/Users/tirupatibalan/Documents/repository/bitbucket/userexperior/userexperior-swift/UserExperior/iOS",
+				);
+				INFOPLIST_FILE = WreelySocial/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wreely.workloft;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "WreelySocial/WreelySocial-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		D5F24FF11FE8F97100FA4040 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D476B183626E96AD773F05BE /* Pods-WreelySocialTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 495XWEJ924;
+				INFOPLIST_FILE = WreelySocialTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.celerstudio.WreelySocialTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WreelySocial.app/WreelySocial";
+			};
+			name = Debug;
+		};
+		D5F24FF21FE8F97100FA4040 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69CDC9D6326CFC67E2BB9FCC /* Pods-WreelySocialTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 495XWEJ924;
+				INFOPLIST_FILE = WreelySocialTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.celerstudio.WreelySocialTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WreelySocial.app/WreelySocial";
+			};
+			name = Release;
+		};
+		D5F24FF41FE8F97100FA4040 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 495XWEJ924;
+				INFOPLIST_FILE = WreelySocialUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.celerstudio.WreelySocialUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WreelySocial;
+			};
+			name = Debug;
+		};
+		D5F24FF51FE8F97100FA4040 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 495XWEJ924;
+				INFOPLIST_FILE = WreelySocialUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.celerstudio.WreelySocialUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WreelySocial;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D5F24FC01FE8F97000FA4040 /* Build configuration list for PBXProject "WreelySocial" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5F24FEB1FE8F97100FA4040 /* Debug */,
+				D51AF84520CF0191007C3A75 /* Debug Beta */,
+				D5F24FEC1FE8F97100FA4040 /* Release */,
+				D51AF84920CF01A1007C3A75 /* Release Beta */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D5F24FED1FE8F97100FA4040 /* Build configuration list for PBXNativeTarget "WreelySocial" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5F24FEE1FE8F97100FA4040 /* Debug */,
+				D51AF84620CF0191007C3A75 /* Debug Beta */,
+				D5F24FEF1FE8F97100FA4040 /* Release */,
+				D51AF84A20CF01A1007C3A75 /* Release Beta */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D5F24FF01FE8F97100FA4040 /* Build configuration list for PBXNativeTarget "WreelySocialTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5F24FF11FE8F97100FA4040 /* Debug */,
+				D51AF84720CF0191007C3A75 /* Debug Beta */,
+				D5F24FF21FE8F97100FA4040 /* Release */,
+				D51AF84B20CF01A1007C3A75 /* Release Beta */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D5F24FF31FE8F97100FA4040 /* Build configuration list for PBXNativeTarget "WreelySocialUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5F24FF41FE8F97100FA4040 /* Debug */,
+				D51AF84820CF0191007C3A75 /* Debug Beta */,
+				D5F24FF51FE8F97100FA4040 /* Release */,
+				D51AF84C20CF01A1007C3A75 /* Release Beta */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D5F24FBD1FE8F97000FA4040 /* Project object */;
+}
