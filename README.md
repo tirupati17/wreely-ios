@@ -1,5 +1,3 @@
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/27d93a9876ff46a981eb75478e454f5b)](https://www.codacy.com?utm_source=github.com&utm_medium=referral&utm_content=tirupati17/wreely-social-iphone&utm_campaign=Badge_Grade_Dashboard)
-
 # Wreely - Social iOS
 Wreely - Social is a community platform iOS app linked with the [Wreely - Workspace Management Platform](http://wreely.com). This app aims to engage workspace co-workers, allowing interactions and access to various workspace-related activities and information.
 
